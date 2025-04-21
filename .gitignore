@@ -1,5 +1,4 @@
 __pycache__/
-analysis_results/*
 latent_diffusion_fulldataset/*
 latent_diffusion_logs_20250420_230335/*
 latent_diffusion_logs_20250420_231141/*
