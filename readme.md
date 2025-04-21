@@ -82,10 +82,13 @@ python evaluate_generated.py --model_path path/to/generated_model.pth
 * At the end, there is a total of 2500 checkpoints.
 * For the base model, it is run 4 times in parallel to create a total of 10,000 checkpoints.
 -->
+
 ### Training model
 The model training is divided in two parts: training VAE and training Diffusion.
+
 #### Training VAE
 The main purpose of this part is to train a VAE model that learns a latent representation of CNN model weights. 
+
 <!--
 The training works the following way:
 * Creates dummy TinyNN to get total number of parameters
@@ -95,6 +98,7 @@ The training works the following way:
 * During training, tracks the best performance and saves it as a checkpoint. 
 * Every 10 epochs, samples a new weight vector from the VAE and reconstructs a new TinyNN
 -->
+
 #### Training Diffusion
 This model is trained to generate neural network weights using a diffusion model that operates in the latent space of the VAE trained. The model training the following way:
 * Loads the TinnyCNN checkpoints, flattens and encodes using the VAE encoder previously trained. Produces of tensor of latent vectors
