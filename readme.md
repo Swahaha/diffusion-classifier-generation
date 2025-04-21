@@ -72,7 +72,7 @@ python evaluate_generated.py --model_path path/to/generated_model.pth
 * Our project is divided into three main components: generating dataset, training model, evaluating results.
 
 ### Generating dataset
-* To be able to generate the training dataset, we have a simple NN with 10 layers.
+* To be able to generate the training dataset, we have a simple NN with 2 layers.
 * TinyNN is trained with the CIFAR-10 dataset a total of 10 times with a max of 500 epochs each time. 
 * For each instance, it generates 250 checkpoints with accuracy > 0.75
 * Each time it trains the TinyNN, it does a random data augmentation (random horizontal flip, random crop padding, ColorJitter)
