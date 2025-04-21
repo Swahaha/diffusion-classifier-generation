@@ -68,10 +68,7 @@ python evaluate_generated.py --model_path path/to/generated_model.pth
 ## Background
 * Traditionally, Diffusion models are used to generate images. But, we aim to encode neural network weights in a way that lets us generate them.
 
-## Methodology
-* Our project is divided into three main components: generating dataset, training model, evaluating results.
-
-### Generating dataset
+## Generating dataset
 * Our dataset is now a set of checkpoints of classifiers trained on CIFAR-10.
 * We are using a simple TinyCNN model with 2 conv layers that can achieve about 80% validation accuracy.
   <!-- 
@@ -83,10 +80,7 @@ python evaluate_generated.py --model_path path/to/generated_model.pth
 * For the base model, it is run 4 times in parallel to create a total of 10,000 checkpoints.
 -->
 
-### Training model
-The model training is divided in two parts: training VAE and training Diffusion.
-
-#### Training VAE
+## Training VAE
 The main purpose of this part is to train a VAE model that learns a latent representation of CNN model weights. 
 
 <!--
@@ -99,7 +93,7 @@ The training works the following way:
 * Every 10 epochs, samples a new weight vector from the VAE and reconstructs a new TinyNN
 -->
 
-#### Training Diffusion
+## Training Diffusion
 This model is trained to generate neural network weights using a diffusion model that operates in the latent space of the VAE trained. The model training the following way:
 * Loads the TinnyCNN checkpoints, flattens and encodes using the VAE encoder previously trained. Produces of tensor of latent vectors
 * Trains the diffusion model on the VAE latent vectors. 
