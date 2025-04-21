@@ -1,0 +1,56 @@
+nohup: ignoring input
+Using device: cuda
+Loading CIFAR10 test set...
+Loading model from: generated_model.pth
+Failed to load with default settings: Weights only load failed. This file can still be loaded, to do so you have two options, [1mdo those steps only if you trust the source of the checkpoint[0m. 
+	(1) In PyTorch 2.6, we changed the default value of the `weights_only` argument in `torch.load` from `False` to `True`. Re-running `torch.load` with `weights_only` set to `False` will likely succeed, but it can result in arbitrary code execution. Do it only if you got the file from a trusted source.
+	(2) Alternatively, to load with `weights_only=True` please check the recommended steps in the following error message.
+	WeightsUnpickler error: Unsupported global: GLOBAL numpy.core.multiarray.scalar was not an allowed global by default. Please use `torch.serialization.add_safe_globals([scalar])` or the `torch.serialization.safe_globals([scalar])` context manager to allowlist this global if you trust this class/function.
+
+Check the documentation of torch.load to learn more about types accepted by default with weights_only https://pytorch.org/docs/stable/generated/torch.load.html.
+Attempting to load with weights_only=False...
+Evaluating model (previously reported accuracy: 72.16)
+Evaluating:   0%|          | 0/79 [00:00<?, ?it/s]Evaluating:   1%|▏         | 1/79 [00:00<00:18,  4.30it/s]Evaluating:  20%|██        | 16/79 [00:00<00:01, 56.57it/s]Evaluating:  35%|███▌      | 28/79 [00:00<00:00, 76.79it/s]Evaluating:  51%|█████     | 40/79 [00:00<00:00, 88.11it/s]Evaluating:  66%|██████▌   | 52/79 [00:00<00:00, 96.46it/s]Evaluating:  81%|████████  | 64/79 [00:00<00:00, 101.30it/s]Evaluating:  96%|█████████▌| 76/79 [00:00<00:00, 104.95it/s]Evaluating: 100%|██████████| 79/79 [00:00<00:00, 85.50it/s] 
+Test Accuracy: 72.16%
+
+Classification Report:
+              precision    recall  f1-score   support
+
+    airplane       0.77      0.79      0.78      1000
+  automobile       0.91      0.79      0.85      1000
+        bird       0.57      0.74      0.64      1000
+         cat       0.56      0.54      0.55      1000
+        deer       0.54      0.89      0.67      1000
+         dog       0.67      0.59      0.63      1000
+        frog       0.83      0.73      0.78      1000
+       horse       0.86      0.68      0.76      1000
+        ship       0.87      0.80      0.83      1000
+       truck       0.92      0.68      0.78      1000
+
+    accuracy                           0.72     10000
+   macro avg       0.75      0.72      0.73     10000
+weighted avg       0.75      0.72      0.73     10000
+
+
+Generating analysis plots...
+
+Class Distribution Analysis:
+            True  Predicted
+airplane    1000       1023
+automobile  1000        867
+bird        1000       1300
+cat         1000        965
+deer        1000       1651
+dog         1000        879
+frog        1000        876
+horse       1000        787
+ship        1000        917
+truck       1000        735
+
+Most predicted class: deer (16.51% of predictions)
+
+Analysis complete! Plots saved to:
+- analysis_results/confusion_matrix.png
+- analysis_results/class_distribution.png
+- analysis_results/confidence_distribution.png
+- analysis_results/class_confidence.png

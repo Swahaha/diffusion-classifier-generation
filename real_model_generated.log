@@ -1,0 +1,542 @@
+nohup: ignoring input
+Using device: cuda
+Loading VAE from: vae_fulldataset/best_model.pth
+Loading diffusion model from: latent_diffusion_fulldataset/best_model.pth
+Loading CIFAR10 test dataset...
+Generating and evaluating 100 models...
+
+Sample 1/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 18it [00:00, 178.83it/s]sampling loop time step: 156it [00:00, 882.04it/s]sampling loop time step: 294it [00:00, 1108.25it/s]sampling loop time step: 433it [00:00, 1216.76it/s]sampling loop time step: 500it [00:00, 1111.10it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:02,  3.34it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 13.14it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.93it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 14.42it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 13.52it/s]
+Sample 1 Accuracy: 52.95%
+New best model! Accuracy: 52.95%
+
+Sample 2/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 130it [00:00, 1294.92it/s]sampling loop time step: 263it [00:00, 1314.94it/s]sampling loop time step: 396it [00:00, 1320.47it/s]sampling loop time step: 500it [00:00, 1319.50it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.26it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00, 10.05it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.96it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.03it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.64it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.95it/s]
+Sample 2 Accuracy: 53.14%
+New best model! Accuracy: 53.14%
+
+Sample 3/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 132it [00:00, 1311.37it/s]sampling loop time step: 265it [00:00, 1320.39it/s]sampling loop time step: 398it [00:00, 1322.39it/s]sampling loop time step: 500it [00:00, 1321.88it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.30it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00, 10.00it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.85it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.75it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.52it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.60it/s]
+Sample 3 Accuracy: 71.60%
+New best model! Accuracy: 71.60%
+
+Sample 4/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 132it [00:00, 1314.17it/s]sampling loop time step: 266it [00:00, 1324.62it/s]sampling loop time step: 400it [00:00, 1327.57it/s]sampling loop time step: 500it [00:00, 1327.38it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.29it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00, 10.09it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 12.08it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.08it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.67it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.80it/s]
+Sample 4 Accuracy: 70.45%
+
+Sample 5/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 130it [00:00, 1299.94it/s]sampling loop time step: 263it [00:00, 1313.34it/s]sampling loop time step: 396it [00:00, 1318.79it/s]sampling loop time step: 500it [00:00, 1317.70it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.29it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00, 10.05it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 12.12it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.06it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.63it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 13.01it/s]
+Sample 5 Accuracy: 30.76%
+
+Sample 6/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 127it [00:00, 1262.57it/s]sampling loop time step: 260it [00:00, 1298.16it/s]sampling loop time step: 392it [00:00, 1305.42it/s]sampling loop time step: 500it [00:00, 1306.69it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.36it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00, 10.23it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 12.09it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.14it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.76it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 13.01it/s]
+Sample 6 Accuracy: 67.17%
+
+Sample 7/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 128it [00:00, 1270.81it/s]sampling loop time step: 262it [00:00, 1309.56it/s]sampling loop time step: 396it [00:00, 1320.56it/s]sampling loop time step: 500it [00:00, 1318.33it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.28it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00, 10.04it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 12.04it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.18it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.74it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 13.01it/s]
+Sample 7 Accuracy: 57.89%
+
+Sample 8/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 130it [00:00, 1294.74it/s]sampling loop time step: 263it [00:00, 1310.00it/s]sampling loop time step: 396it [00:00, 1315.48it/s]sampling loop time step: 500it [00:00, 1315.49it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.32it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.85it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.83it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.94it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.61it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.92it/s]
+Sample 8 Accuracy: 69.89%
+
+Sample 9/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 129it [00:00, 1287.19it/s]sampling loop time step: 262it [00:00, 1310.94it/s]sampling loop time step: 395it [00:00, 1318.07it/s]sampling loop time step: 500it [00:00, 1316.23it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.32it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.96it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 12.01it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.04it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.75it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 13.08it/s]
+Sample 9 Accuracy: 33.96%
+
+Sample 10/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 131it [00:00, 1303.58it/s]sampling loop time step: 263it [00:00, 1308.19it/s]sampling loop time step: 395it [00:00, 1310.50it/s]sampling loop time step: 500it [00:00, 1312.06it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.23it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.98it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 12.00it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.09it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.70it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 13.11it/s]
+Sample 10 Accuracy: 60.77%
+
+Sample 11/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 124it [00:00, 1239.95it/s]sampling loop time step: 250it [00:00, 1247.85it/s]sampling loop time step: 376it [00:00, 1252.88it/s]sampling loop time step: 500it [00:00, 1253.75it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.26it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.97it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.92it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.98it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.61it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.97it/s]
+Sample 11 Accuracy: 45.63%
+
+Sample 12/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 133it [00:00, 1325.78it/s]sampling loop time step: 267it [00:00, 1330.96it/s]sampling loop time step: 401it [00:00, 1333.36it/s]sampling loop time step: 500it [00:00, 1332.59it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.30it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00, 10.15it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 12.13it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.14it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.72it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 13.08it/s]
+Sample 12 Accuracy: 49.74%
+
+Sample 13/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 131it [00:00, 1301.55it/s]sampling loop time step: 265it [00:00, 1318.92it/s]sampling loop time step: 399it [00:00, 1325.36it/s]sampling loop time step: 500it [00:00, 1324.07it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.12it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00, 10.00it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.96it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.04it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.74it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.73it/s]
+Sample 13 Accuracy: 54.21%
+
+Sample 14/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 127it [00:00, 1268.75it/s]sampling loop time step: 260it [00:00, 1299.15it/s]sampling loop time step: 394it [00:00, 1315.74it/s]sampling loop time step: 500it [00:00, 1313.72it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.04it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.76it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.84it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.95it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.63it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.96it/s]
+Sample 14 Accuracy: 68.92%
+
+Sample 15/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 132it [00:00, 1317.05it/s]sampling loop time step: 265it [00:00, 1320.32it/s]sampling loop time step: 398it [00:00, 1322.53it/s]sampling loop time step: 500it [00:00, 1322.44it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.29it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.91it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 12.00it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.01it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.62it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 13.03it/s]
+Sample 15 Accuracy: 50.90%
+
+Sample 16/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 132it [00:00, 1310.85it/s]sampling loop time step: 266it [00:00, 1323.25it/s]sampling loop time step: 400it [00:00, 1326.63it/s]sampling loop time step: 500it [00:00, 1326.11it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.34it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00, 10.02it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 12.03it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.05it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.70it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 13.07it/s]
+Sample 16 Accuracy: 10.05%
+
+Sample 17/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 130it [00:00, 1296.74it/s]sampling loop time step: 263it [00:00, 1312.00it/s]sampling loop time step: 396it [00:00, 1318.02it/s]sampling loop time step: 500it [00:00, 1318.28it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.16it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.93it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.85it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.89it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.51it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.94it/s]
+Sample 17 Accuracy: 63.26%
+
+Sample 18/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 130it [00:00, 1293.08it/s]sampling loop time step: 260it [00:00, 1255.64it/s]sampling loop time step: 386it [00:00, 1252.01it/s]sampling loop time step: 500it [00:00, 1255.35it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.28it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00, 10.03it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 12.01it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.02it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.62it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 13.00it/s]
+Sample 18 Accuracy: 69.69%
+
+Sample 19/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 128it [00:00, 1279.29it/s]sampling loop time step: 256it [00:00, 1271.30it/s]sampling loop time step: 384it [00:00, 1269.85it/s]sampling loop time step: 500it [00:00, 1269.51it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.30it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.99it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.98it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.05it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.65it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 13.02it/s]
+Sample 19 Accuracy: 72.16%
+New best model! Accuracy: 72.16%
+
+Sample 20/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 133it [00:00, 1321.33it/s]sampling loop time step: 266it [00:00, 1320.34it/s]sampling loop time step: 399it [00:00, 1320.40it/s]sampling loop time step: 500it [00:00, 1322.39it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.23it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.96it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.93it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.02it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.65it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 13.04it/s]
+Sample 20 Accuracy: 52.51%
+
+Sample 21/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 130it [00:00, 1298.74it/s]sampling loop time step: 260it [00:00, 1271.02it/s]sampling loop time step: 388it [00:00, 1260.88it/s]sampling loop time step: 500it [00:00, 1262.54it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.32it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00, 10.11it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 12.12it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.14it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.77it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 13.13it/s]
+Sample 21 Accuracy: 67.71%
+
+Sample 22/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 132it [00:00, 1313.15it/s]sampling loop time step: 265it [00:00, 1319.66it/s]sampling loop time step: 398it [00:00, 1322.37it/s]sampling loop time step: 500it [00:00, 1310.57it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.25it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.94it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 12.00it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.05it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.62it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.98it/s]
+Sample 22 Accuracy: 53.01%
+
+Sample 23/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 128it [00:00, 1276.65it/s]sampling loop time step: 260it [00:00, 1299.99it/s]sampling loop time step: 392it [00:00, 1308.85it/s]sampling loop time step: 500it [00:00, 1308.65it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.24it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.99it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 12.02it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.09it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.72it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 13.10it/s]
+Sample 23 Accuracy: 45.15%
+
+Sample 24/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 129it [00:00, 1282.69it/s]sampling loop time step: 262it [00:00, 1307.25it/s]sampling loop time step: 395it [00:00, 1315.27it/s]sampling loop time step: 500it [00:00, 1315.87it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.17it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.97it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.92it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.04it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.61it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.97it/s]
+Sample 24 Accuracy: 69.18%
+
+Sample 25/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 130it [00:00, 1299.49it/s]sampling loop time step: 263it [00:00, 1316.28it/s]sampling loop time step: 396it [00:00, 1321.86it/s]sampling loop time step: 500it [00:00, 1321.52it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.27it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.91it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.77it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.76it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.42it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.87it/s]
+Sample 25 Accuracy: 56.84%
+
+Sample 26/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 126it [00:00, 1253.12it/s]sampling loop time step: 252it [00:00, 1254.80it/s]sampling loop time step: 378it [00:00, 1255.83it/s]sampling loop time step: 500it [00:00, 1256.50it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.25it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00, 10.00it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.95it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.04it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.64it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.84it/s]
+Sample 26 Accuracy: 68.81%
+
+Sample 27/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 133it [00:00, 1319.53it/s]sampling loop time step: 266it [00:00, 1321.81it/s]sampling loop time step: 399it [00:00, 1323.24it/s]sampling loop time step: 500it [00:00, 1324.33it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.28it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00, 10.07it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 12.12it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.17it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.78it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 13.12it/s]
+Sample 27 Accuracy: 53.19%
+
+Sample 28/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 133it [00:00, 1322.59it/s]sampling loop time step: 267it [00:00, 1332.21it/s]sampling loop time step: 401it [00:00, 1333.27it/s]sampling loop time step: 500it [00:00, 1332.16it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.30it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00, 10.06it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 12.02it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.09it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.71it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 13.13it/s]
+Sample 28 Accuracy: 59.52%
+
+Sample 29/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 130it [00:00, 1297.55it/s]sampling loop time step: 263it [00:00, 1315.58it/s]sampling loop time step: 396it [00:00, 1321.24it/s]sampling loop time step: 500it [00:00, 1321.63it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.28it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00, 10.02it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.98it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.14it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.76it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 13.07it/s]
+Sample 29 Accuracy: 52.41%
+
+Sample 30/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 128it [00:00, 1270.74it/s]sampling loop time step: 261it [00:00, 1302.51it/s]sampling loop time step: 394it [00:00, 1312.25it/s]sampling loop time step: 500it [00:00, 1311.31it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.26it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00, 10.03it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 10.82it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.07it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 12.91it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.42it/s]
+Sample 30 Accuracy: 10.00%
+
+Sample 31/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 130it [00:00, 1291.10it/s]sampling loop time step: 262it [00:00, 1305.17it/s]sampling loop time step: 394it [00:00, 1310.01it/s]sampling loop time step: 500it [00:00, 1310.33it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.22it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.98it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 12.02it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.07it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.69it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 13.09it/s]
+Sample 31 Accuracy: 66.85%
+
+Sample 32/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 129it [00:00, 1286.33it/s]sampling loop time step: 261it [00:00, 1305.26it/s]sampling loop time step: 394it [00:00, 1312.01it/s]sampling loop time step: 500it [00:00, 1311.10it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.31it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.76it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.54it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.62it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.28it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.71it/s]
+Sample 32 Accuracy: 29.82%
+
+Sample 33/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 131it [00:00, 1302.81it/s]sampling loop time step: 263it [00:00, 1312.14it/s]sampling loop time step: 395it [00:00, 1314.38it/s]sampling loop time step: 500it [00:00, 1314.01it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.37it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00, 10.10it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 12.04it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.08it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.70it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.97it/s]
+Sample 33 Accuracy: 47.80%
+
+Sample 34/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 132it [00:00, 1312.87it/s]sampling loop time step: 264it [00:00, 1313.44it/s]sampling loop time step: 396it [00:00, 1315.45it/s]sampling loop time step: 500it [00:00, 1316.30it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.29it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00, 10.02it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.98it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.96it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.45it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.97it/s]
+Sample 34 Accuracy: 69.32%
+
+Sample 35/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 122it [00:00, 1211.93it/s]sampling loop time step: 255it [00:00, 1277.78it/s]sampling loop time step: 387it [00:00, 1296.38it/s]sampling loop time step: 500it [00:00, 1292.00it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.31it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.95it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.95it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.98it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.59it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 13.01it/s]
+Sample 35 Accuracy: 32.11%
+
+Sample 36/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 123it [00:00, 1229.16it/s]sampling loop time step: 248it [00:00, 1237.54it/s]sampling loop time step: 373it [00:00, 1242.95it/s]sampling loop time step: 498it [00:00, 1243.68it/s]sampling loop time step: 500it [00:00, 1241.55it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.14it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.87it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.74it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.01it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 12.57it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.29it/s]
+Sample 36 Accuracy: 70.10%
+
+Sample 37/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 132it [00:00, 1315.08it/s]sampling loop time step: 264it [00:00, 1287.35it/s]sampling loop time step: 393it [00:00, 1281.00it/s]sampling loop time step: 500it [00:00, 1282.58it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.20it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.90it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.65it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.79it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.53it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.86it/s]
+Sample 37 Accuracy: 25.93%
+
+Sample 38/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 133it [00:00, 1325.22it/s]sampling loop time step: 266it [00:00, 1281.16it/s]sampling loop time step: 395it [00:00, 1253.52it/s]sampling loop time step: 500it [00:00, 1266.41it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.05it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.76it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.72it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.82it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.42it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.78it/s]
+Sample 38 Accuracy: 66.48%
+
+Sample 39/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 130it [00:00, 1298.68it/s]sampling loop time step: 262it [00:00, 1306.02it/s]sampling loop time step: 393it [00:00, 1303.63it/s]sampling loop time step: 500it [00:00, 1289.70it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.17it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.84it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.82it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.87it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.54it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.91it/s]
+Sample 39 Accuracy: 59.28%
+
+Sample 40/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 124it [00:00, 1238.19it/s]sampling loop time step: 256it [00:00, 1285.14it/s]sampling loop time step: 390it [00:00, 1307.45it/s]sampling loop time step: 500it [00:00, 1305.35it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.23it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.95it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.98it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.89it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.53it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.98it/s]
+Sample 40 Accuracy: 56.98%
+
+Sample 41/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 132it [00:00, 1313.32it/s]sampling loop time step: 264it [00:00, 1315.49it/s]sampling loop time step: 396it [00:00, 1315.38it/s]sampling loop time step: 500it [00:00, 1316.24it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.11it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.81it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.88it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.98it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.59it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.91it/s]
+Sample 41 Accuracy: 30.37%
+
+Sample 42/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 133it [00:00, 1322.97it/s]sampling loop time step: 266it [00:00, 1323.61it/s]sampling loop time step: 399it [00:00, 1323.24it/s]sampling loop time step: 500it [00:00, 1324.06it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.13it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.86it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.92it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.96it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.61it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.98it/s]
+Sample 42 Accuracy: 49.27%
+
+Sample 43/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 130it [00:00, 1296.04it/s]sampling loop time step: 263it [00:00, 1315.82it/s]sampling loop time step: 396it [00:00, 1318.11it/s]sampling loop time step: 500it [00:00, 1316.22it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.28it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00, 10.01it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.97it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.99it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.58it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 13.00it/s]
+Sample 43 Accuracy: 51.97%
+
+Sample 44/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 131it [00:00, 1305.30it/s]sampling loop time step: 263it [00:00, 1310.53it/s]sampling loop time step: 396it [00:00, 1314.89it/s]sampling loop time step: 500it [00:00, 1312.79it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.14it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.82it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.84it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.76it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.38it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.80it/s]
+Sample 44 Accuracy: 47.71%
+
+Sample 45/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 133it [00:00, 1323.53it/s]sampling loop time step: 266it [00:00, 1324.35it/s]sampling loop time step: 400it [00:00, 1328.65it/s]sampling loop time step: 500it [00:00, 1329.03it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.16it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.95it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.95it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.98it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.53it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.91it/s]
+Sample 45 Accuracy: 62.45%
+
+Sample 46/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 130it [00:00, 1293.49it/s]sampling loop time step: 260it [00:00, 1274.17it/s]sampling loop time step: 390it [00:00, 1282.26it/s]sampling loop time step: 500it [00:00, 1293.47it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.20it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.74it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.74it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.67it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.20it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.66it/s]
+Sample 46 Accuracy: 57.76%
+
+Sample 47/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 128it [00:00, 1273.67it/s]sampling loop time step: 261it [00:00, 1305.09it/s]sampling loop time step: 395it [00:00, 1317.30it/s]sampling loop time step: 500it [00:00, 1315.64it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.27it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.96it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.95it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.99it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.61it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.64it/s]
+Sample 47 Accuracy: 11.89%
+
+Sample 48/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 126it [00:00, 1251.50it/s]sampling loop time step: 252it [00:00, 1246.92it/s]sampling loop time step: 377it [00:00, 1245.07it/s]sampling loop time step: 500it [00:00, 1245.32it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.27it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00, 10.00it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.70it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.85it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.50it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.89it/s]
+Sample 48 Accuracy: 49.42%
+
+Sample 49/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 126it [00:00, 1255.13it/s]sampling loop time step: 252it [00:00, 1257.94it/s]sampling loop time step: 384it [00:00, 1283.79it/s]sampling loop time step: 500it [00:00, 1279.44it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.26it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.98it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.89it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.83it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.52it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.94it/s]
+Sample 49 Accuracy: 70.07%
+
+Sample 50/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 129it [00:00, 1286.94it/s]sampling loop time step: 261it [00:00, 1304.93it/s]sampling loop time step: 393it [00:00, 1311.51it/s]sampling loop time step: 500it [00:00, 1311.96it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.12it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.88it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.91it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.98it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.60it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 13.00it/s]
+Sample 50 Accuracy: 13.63%
+
+Sample 51/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 130it [00:00, 1290.41it/s]sampling loop time step: 263it [00:00, 1312.98it/s]sampling loop time step: 395it [00:00, 1314.76it/s]sampling loop time step: 500it [00:00, 1313.65it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.28it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.83it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.90it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.90it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.57it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.93it/s]
+Sample 51 Accuracy: 57.88%
+
+Sample 52/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 130it [00:00, 1299.87it/s]sampling loop time step: 262it [00:00, 1311.32it/s]sampling loop time step: 395it [00:00, 1319.10it/s]sampling loop time step: 500it [00:00, 1317.73it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.19it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.85it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.88it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.95it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.55it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.97it/s]
+Sample 52 Accuracy: 69.63%
+
+Sample 53/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 132it [00:00, 1314.89it/s]sampling loop time step: 265it [00:00, 1321.15it/s]sampling loop time step: 398it [00:00, 1322.17it/s]sampling loop time step: 500it [00:00, 1321.86it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.13it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.75it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.78it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.95it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.57it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.88it/s]
+Sample 53 Accuracy: 19.72%
+
+Sample 54/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 133it [00:00, 1325.25it/s]sampling loop time step: 266it [00:00, 1324.16it/s]sampling loop time step: 399it [00:00, 1323.35it/s]sampling loop time step: 500it [00:00, 1326.27it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.26it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.96it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.92it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.95it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.58it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 13.00it/s]
+Sample 54 Accuracy: 53.76%
+
+Sample 55/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 130it [00:00, 1298.89it/s]sampling loop time step: 264it [00:00, 1319.28it/s]sampling loop time step: 397it [00:00, 1321.93it/s]sampling loop time step: 500it [00:00, 1319.57it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.18it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.92it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.84it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.99it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.56it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.95it/s]
+Sample 55 Accuracy: 66.41%
+
+Sample 56/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 130it [00:00, 1298.72it/s]sampling loop time step: 260it [00:00, 1288.28it/s]sampling loop time step: 389it [00:00, 1275.13it/s]sampling loop time step: 500it [00:00, 1275.76it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.23it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.97it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.90it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.98it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.49it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.90it/s]
+Sample 56 Accuracy: 37.80%
+
+Sample 57/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 130it [00:00, 1293.20it/s]sampling loop time step: 263it [00:00, 1313.67it/s]sampling loop time step: 396it [00:00, 1318.92it/s]sampling loop time step: 500it [00:00, 1319.19it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.17it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.94it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.73it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.76it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.28it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.76it/s]
+Sample 57 Accuracy: 55.90%
+
+Sample 58/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 126it [00:00, 1257.35it/s]sampling loop time step: 252it [00:00, 1253.53it/s]sampling loop time step: 378it [00:00, 1229.58it/s]sampling loop time step: 500it [00:00, 1257.81it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.13it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.89it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.92it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.96it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.55it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.78it/s]
+Sample 58 Accuracy: 66.51%
+
+Sample 59/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 133it [00:00, 1327.75it/s]sampling loop time step: 266it [00:00, 1325.32it/s]sampling loop time step: 399it [00:00, 1325.38it/s]sampling loop time step: 500it [00:00, 1326.97it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.15it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.91it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.91it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.89it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.60it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.91it/s]
+Sample 59 Accuracy: 63.65%
+
+Sample 60/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 132it [00:00, 1312.45it/s]sampling loop time step: 266it [00:00, 1325.44it/s]sampling loop time step: 400it [00:00, 1328.33it/s]sampling loop time step: 500it [00:00, 1327.37it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.11it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.81it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.90it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.76it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.32it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.77it/s]
+Sample 60 Accuracy: 55.43%
+
+Sample 61/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 128it [00:00, 1275.84it/s]sampling loop time step: 256it [00:00, 1259.97it/s]sampling loop time step: 383it [00:00, 1254.56it/s]sampling loop time step: 500it [00:00, 1263.79it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.27it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00, 10.00it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.98it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.02it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.61it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.65it/s]
+Sample 61 Accuracy: 13.37%
+
+Sample 62/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 134it [00:00, 1333.45it/s]sampling loop time step: 268it [00:00, 1332.68it/s]sampling loop time step: 402it [00:00, 1333.46it/s]sampling loop time step: 500it [00:00, 1334.91it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.24it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.89it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.96it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.91it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.61it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.98it/s]
+Sample 62 Accuracy: 51.43%
+
+Sample 63/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 131it [00:00, 1301.06it/s]sampling loop time step: 264it [00:00, 1317.85it/s]sampling loop time step: 398it [00:00, 1323.89it/s]sampling loop time step: 500it [00:00, 1317.13it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.21it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.96it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.96it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.04it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.65it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 13.04it/s]
+Sample 63 Accuracy: 10.54%
+
+Sample 64/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 128it [00:00, 1278.45it/s]sampling loop time step: 258it [00:00, 1288.81it/s]sampling loop time step: 387it [00:00, 1279.07it/s]sampling loop time step: 500it [00:00, 1276.56it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.16it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.72it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.51it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.70it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.40it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.71it/s]
+Sample 64 Accuracy: 30.22%
+
+Sample 65/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 133it [00:00, 1324.85it/s]sampling loop time step: 266it [00:00, 1307.75it/s]sampling loop time step: 397it [00:00, 1290.88it/s]sampling loop time step: 500it [00:00, 1290.96it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.11it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.76it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.62it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.81it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.50it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.82it/s]
+Sample 65 Accuracy: 53.11%
+
+Sample 66/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 132it [00:00, 1316.06it/s]sampling loop time step: 265it [00:00, 1320.03it/s]sampling loop time step: 399it [00:00, 1324.62it/s]sampling loop time step: 500it [00:00, 1322.40it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.16it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.97it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.95it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.02it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.60it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.93it/s]
+Sample 66 Accuracy: 50.49%
+
+Sample 67/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 127it [00:00, 1265.05it/s]sampling loop time step: 260it [00:00, 1300.15it/s]sampling loop time step: 392it [00:00, 1305.37it/s]sampling loop time step: 500it [00:00, 1305.76it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.11it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.87it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.93it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.00it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.63it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 13.01it/s]
+Sample 67 Accuracy: 52.73%
+
+Sample 68/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 131it [00:00, 1300.52it/s]sampling loop time step: 263it [00:00, 1308.72it/s]sampling loop time step: 395it [00:00, 1311.81it/s]sampling loop time step: 500it [00:00, 1313.99it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.25it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.97it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.92it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.90it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.46it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.69it/s]
+Sample 68 Accuracy: 49.83%
+
+Sample 69/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 127it [00:00, 1262.83it/s]sampling loop time step: 260it [00:00, 1299.48it/s]sampling loop time step: 393it [00:00, 1311.12it/s]sampling loop time step: 500it [00:00, 1309.48it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.21it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00, 10.00it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.95it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.03it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.55it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.92it/s]
+Sample 69 Accuracy: 55.66%
+
+Sample 70/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 130it [00:00, 1291.74it/s]sampling loop time step: 262it [00:00, 1306.33it/s]sampling loop time step: 394it [00:00, 1311.65it/s]sampling loop time step: 500it [00:00, 1312.04it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.18it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.83it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.71it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.44it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.29it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.71it/s]
+Sample 70 Accuracy: 58.44%
+
+Sample 71/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 132it [00:00, 1312.71it/s]sampling loop time step: 265it [00:00, 1320.43it/s]sampling loop time step: 398it [00:00, 1318.88it/s]sampling loop time step: 500it [00:00, 1317.10it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.20it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.92it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.91it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.94it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.54it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.97it/s]
+Sample 71 Accuracy: 13.91%
+
+Sample 72/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 132it [00:00, 1314.43it/s]sampling loop time step: 265it [00:00, 1319.09it/s]sampling loop time step: 398it [00:00, 1320.12it/s]sampling loop time step: 500it [00:00, 1320.09it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.28it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.98it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.97it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.00it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.59it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.95it/s]
+Sample 72 Accuracy: 47.04%
+
+Sample 73/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 133it [00:00, 1320.39it/s]sampling loop time step: 266it [00:00, 1325.18it/s]sampling loop time step: 399it [00:00, 1326.00it/s]sampling loop time step: 500it [00:00, 1322.96it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.21it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.94it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.94it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.98it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.58it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.88it/s]
+Sample 73 Accuracy: 52.52%
+
+Sample 74/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 130it [00:00, 1292.27it/s]sampling loop time step: 263it [00:00, 1311.68it/s]sampling loop time step: 396it [00:00, 1318.53it/s]sampling loop time step: 500it [00:00, 1317.66it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.22it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.83it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.59it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.78it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.35it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.74it/s]
+Sample 74 Accuracy: 48.53%
+
+Sample 75/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 132it [00:00, 1315.47it/s]sampling loop time step: 265it [00:00, 1322.87it/s]sampling loop time step: 398it [00:00, 1325.74it/s]sampling loop time step: 500it [00:00, 1324.49it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.16it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.87it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.87it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.96it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.57it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.95it/s]
+Sample 75 Accuracy: 64.48%
+
+Sample 76/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 128it [00:00, 1275.06it/s]sampling loop time step: 261it [00:00, 1301.46it/s]sampling loop time step: 394it [00:00, 1311.64it/s]sampling loop time step: 500it [00:00, 1309.51it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.23it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.62it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.55it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.71it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.37it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.70it/s]
+Sample 76 Accuracy: 33.57%
+
+Sample 77/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 128it [00:00, 1277.93it/s]sampling loop time step: 261it [00:00, 1307.04it/s]sampling loop time step: 394it [00:00, 1315.15it/s]sampling loop time step: 500it [00:00, 1310.88it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.23it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.92it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.77it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.85it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.47it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.85it/s]
+Sample 77 Accuracy: 67.83%
+
+Sample 78/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 129it [00:00, 1285.26it/s]sampling loop time step: 260it [00:00, 1298.39it/s]sampling loop time step: 392it [00:00, 1306.66it/s]sampling loop time step: 500it [00:00, 1304.31it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.14it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.89it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.87it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.92it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.54it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.94it/s]
+Sample 78 Accuracy: 63.27%
+
+Sample 79/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 129it [00:00, 1285.98it/s]sampling loop time step: 263it [00:00, 1312.15it/s]sampling loop time step: 397it [00:00, 1320.45it/s]sampling loop time step: 500it [00:00, 1318.68it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.13it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.83it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.83it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.81it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.42it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.78it/s]
+Sample 79 Accuracy: 50.67%
+
+Sample 80/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 129it [00:00, 1289.15it/s]sampling loop time step: 261it [00:00, 1306.84it/s]sampling loop time step: 394it [00:00, 1312.93it/s]sampling loop time step: 500it [00:00, 1312.56it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.11it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.81it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.65it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.64it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.17it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.61it/s]
+Sample 80 Accuracy: 48.94%
+
+Sample 81/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 128it [00:00, 1278.87it/s]sampling loop time step: 261it [00:00, 1307.66it/s]sampling loop time step: 394it [00:00, 1316.86it/s]sampling loop time step: 500it [00:00, 1314.81it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.20it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.90it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.87it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.88it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.50it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.87it/s]
+Sample 81 Accuracy: 66.85%
+
+Sample 82/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 124it [00:00, 1239.64it/s]sampling loop time step: 252it [00:00, 1259.97it/s]sampling loop time step: 383it [00:00, 1279.79it/s]sampling loop time step: 500it [00:00, 1285.55it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.20it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.85it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.87it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.94it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.54it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.96it/s]
+Sample 82 Accuracy: 17.61%
+
+Sample 83/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 132it [00:00, 1312.69it/s]sampling loop time step: 265it [00:00, 1318.62it/s]sampling loop time step: 398it [00:00, 1319.64it/s]sampling loop time step: 500it [00:00, 1319.96it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.17it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.86it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.86it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.79it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.29it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.74it/s]
+Sample 83 Accuracy: 10.05%
+
+Sample 84/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 123it [00:00, 1228.67it/s]sampling loop time step: 255it [00:00, 1278.68it/s]sampling loop time step: 387it [00:00, 1295.93it/s]sampling loop time step: 500it [00:00, 1294.35it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.19it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.83it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.74it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.77it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.29it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.76it/s]
+Sample 84 Accuracy: 27.14%
+
+Sample 85/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 132it [00:00, 1314.92it/s]sampling loop time step: 264it [00:00, 1317.52it/s]sampling loop time step: 396it [00:00, 1317.62it/s]sampling loop time step: 500it [00:00, 1318.39it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.28it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.94it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.93it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.96it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.58it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.92it/s]
+Sample 85 Accuracy: 69.70%
+
+Sample 86/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 131it [00:00, 1305.25it/s]sampling loop time step: 263it [00:00, 1309.73it/s]sampling loop time step: 394it [00:00, 1289.03it/s]sampling loop time step: 500it [00:00, 1287.71it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.12it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.78it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.79it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.95it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.54it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.91it/s]
+Sample 86 Accuracy: 33.26%
+
+Sample 87/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 128it [00:00, 1273.92it/s]sampling loop time step: 260it [00:00, 1296.58it/s]sampling loop time step: 393it [00:00, 1307.91it/s]sampling loop time step: 500it [00:00, 1304.99it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.22it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.93it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.91it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.77it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.36it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.81it/s]
+Sample 87 Accuracy: 14.42%
+
+Sample 88/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 129it [00:00, 1285.42it/s]sampling loop time step: 262it [00:00, 1306.92it/s]sampling loop time step: 395it [00:00, 1314.05it/s]sampling loop time step: 500it [00:00, 1312.77it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.27it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00, 10.02it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.99it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 13.01it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.57it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.77it/s]
+Sample 88 Accuracy: 51.41%
+
+Sample 89/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 125it [00:00, 1239.98it/s]sampling loop time step: 252it [00:00, 1255.81it/s]sampling loop time step: 379it [00:00, 1257.88it/s]sampling loop time step: 500it [00:00, 1257.73it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.09it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.81it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.73it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.81it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.52it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.86it/s]
+Sample 89 Accuracy: 52.89%
+
+Sample 90/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 126it [00:00, 1256.93it/s]sampling loop time step: 254it [00:00, 1269.79it/s]sampling loop time step: 382it [00:00, 1272.56it/s]sampling loop time step: 500it [00:00, 1272.33it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.17it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.89it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.85it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.92it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.53it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.97it/s]
+Sample 90 Accuracy: 51.51%
+
+Sample 91/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 131it [00:00, 1299.91it/s]sampling loop time step: 261it [00:00, 1293.47it/s]sampling loop time step: 391it [00:00, 1284.97it/s]sampling loop time step: 500it [00:00, 1286.59it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.16it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.82it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.81it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.92it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.53it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.87it/s]
+Sample 91 Accuracy: 62.59%
+
+Sample 92/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 122it [00:00, 1210.48it/s]sampling loop time step: 244it [00:00, 1207.73it/s]sampling loop time step: 377it [00:00, 1259.52it/s]sampling loop time step: 500it [00:00, 1264.13it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.23it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.95it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.95it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.99it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.59it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.96it/s]
+Sample 92 Accuracy: 39.80%
+
+Sample 93/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 132it [00:00, 1312.44it/s]sampling loop time step: 264it [00:00, 1314.67it/s]sampling loop time step: 396it [00:00, 1315.69it/s]sampling loop time step: 500it [00:00, 1315.49it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.26it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.98it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.92it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.93it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.50it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.86it/s]
+Sample 93 Accuracy: 49.61%
+
+Sample 94/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 131it [00:00, 1300.13it/s]sampling loop time step: 263it [00:00, 1309.60it/s]sampling loop time step: 395it [00:00, 1310.24it/s]sampling loop time step: 500it [00:00, 1309.32it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.25it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.96it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.86it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.95it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.49it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.63it/s]
+Sample 94 Accuracy: 44.90%
+
+Sample 95/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 131it [00:00, 1305.85it/s]sampling loop time step: 263it [00:00, 1310.58it/s]sampling loop time step: 395it [00:00, 1310.84it/s]sampling loop time step: 500it [00:00, 1312.07it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.21it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.90it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.89it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.93it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.53it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.92it/s]
+Sample 95 Accuracy: 10.00%
+
+Sample 96/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 132it [00:00, 1317.55it/s]sampling loop time step: 264it [00:00, 1317.28it/s]sampling loop time step: 396it [00:00, 1317.49it/s]sampling loop time step: 500it [00:00, 1318.95it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.21it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.89it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.85it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.88it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.47it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.86it/s]
+Sample 96 Accuracy: 64.82%
+
+Sample 97/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 124it [00:00, 1238.58it/s]sampling loop time step: 248it [00:00, 1209.29it/s]sampling loop time step: 375it [00:00, 1233.66it/s]sampling loop time step: 500it [00:00, 1239.02it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.20it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.93it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.96it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.94it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.49it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.61it/s]
+Sample 97 Accuracy: 46.39%
+
+Sample 98/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 129it [00:00, 1281.74it/s]sampling loop time step: 260it [00:00, 1297.27it/s]sampling loop time step: 391it [00:00, 1302.49it/s]sampling loop time step: 500it [00:00, 1303.40it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.18it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.87it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.84it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.84it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.45it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.82it/s]
+Sample 98 Accuracy: 64.78%
+
+Sample 99/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 132it [00:00, 1311.51it/s]sampling loop time step: 264it [00:00, 1315.68it/s]sampling loop time step: 396it [00:00, 1317.10it/s]sampling loop time step: 500it [00:00, 1317.31it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.13it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.84it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.82it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.86it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.55it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.87it/s]
+Sample 99 Accuracy: 51.21%
+
+Sample 100/100
+sampling loop time step: 0it [00:00, ?it/s]sampling loop time step: 128it [00:00, 1274.91it/s]sampling loop time step: 259it [00:00, 1293.44it/s]sampling loop time step: 390it [00:00, 1298.22it/s]sampling loop time step: 500it [00:00, 1299.15it/s]
+Evaluating:   0%|          | 0/10 [00:00<?, ?it/s]Evaluating:  10%|█         | 1/10 [00:00<00:01,  5.22it/s]Evaluating:  30%|███       | 3/10 [00:00<00:00,  9.88it/s]Evaluating:  50%|█████     | 5/10 [00:00<00:00, 11.82it/s]Evaluating:  70%|███████   | 7/10 [00:00<00:00, 12.86it/s]Evaluating:  90%|█████████ | 9/10 [00:00<00:00, 13.44it/s]Evaluating: 100%|██████████| 10/10 [00:00<00:00, 12.86it/s]
+Sample 100 Accuracy: 49.82%
+
+=== Overall Statistics ===
+Number of samples: 100
+Average accuracy: 49.53%
+Median accuracy: 52.62%
+Min accuracy: 10.00%
+Max accuracy: 72.16%
+Std dev: 17.49%
+
+=== Best Model (Sample 19) ===
+Accuracy: 72.16%
+
+Classification Report:
+              precision    recall  f1-score   support
+
+    airplane       0.77      0.79      0.78      1000
+  automobile       0.91      0.79      0.85      1000
+        bird       0.57      0.74      0.64      1000
+         cat       0.56      0.54      0.55      1000
+        deer       0.54      0.89      0.67      1000
+         dog       0.67      0.59      0.63      1000
+        frog       0.83      0.73      0.78      1000
+       horse       0.86      0.68      0.76      1000
+        ship       0.87      0.80      0.83      1000
+       truck       0.92      0.68      0.78      1000
+
+    accuracy                           0.72     10000
+   macro avg       0.75      0.72      0.73     10000
+weighted avg       0.75      0.72      0.73     10000
+
+
+Evaluation complete! Results saved to latent_diffusion_fulldataset/evaluation_results
