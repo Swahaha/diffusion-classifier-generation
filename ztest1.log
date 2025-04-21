@@ -1,0 +1,77 @@
+nohup: ignoring input
+Using device: cuda:0
+Validating sampled model:   0%|          | 0/100 [00:00<?, ?it/s]Validating sampled model:   1%|          | 1/100 [00:00<00:10,  9.16it/s]Validating sampled model:  27%|██▋       | 27/100 [00:00<00:00, 148.48it/s]Validating sampled model:  57%|█████▋    | 57/100 [00:00<00:00, 215.08it/s]Validating sampled model:  87%|████████▋ | 87/100 [00:00<00:00, 238.84it/s]Validating sampled model: 100%|██████████| 100/100 [00:00<00:00, 199.97it/s]
+/home/swarajh/miniforge3/envs/hyper/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/swarajh/miniforge3/envs/hyper/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/swarajh/miniforge3/envs/hyper/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+=== Generated TinyCNN Validation ===
+Overall Accuracy: 11.19%
+
+--- Label Distributions ---
+True labels:
+  airplane  :  1000
+  automobile:  1000
+  bird      :  1000
+  cat       :  1000
+  deer      :  1000
+  dog       :  1000
+  frog      :  1000
+  horse     :  1000
+  ship      :  1000
+  truck     :  1000
+Predicted labels:
+  airplane  :   434
+  automobile:     0
+  bird      :     0
+  cat       :  9459
+  deer      :   107
+  dog       :     0
+  frog      :     0
+  horse     :     0
+  ship      :     0
+  truck     :     0
+
+--- Classification Report ---
+              precision    recall  f1-score   support
+
+    airplane     0.3364    0.1460    0.2036      1000
+  automobile     0.0000    0.0000    0.0000      1000
+        bird     0.0000    0.0000    0.0000      1000
+         cat     0.1005    0.9510    0.1819      1000
+        deer     0.2056    0.0220    0.0397      1000
+         dog     0.0000    0.0000    0.0000      1000
+        frog     0.0000    0.0000    0.0000      1000
+       horse     0.0000    0.0000    0.0000      1000
+        ship     0.0000    0.0000    0.0000      1000
+       truck     0.0000    0.0000    0.0000      1000
+
+    accuracy                         0.1119     10000
+   macro avg     0.0643    0.1119    0.0425     10000
+weighted avg     0.0643    0.1119    0.0425     10000
+
+
+--- Confusion Matrix ---
+            airplane  automobile  bird  cat  ...  frog  horse  ship  truck
+airplane         146           0     0  846  ...     0      0     0      0
+automobile        47           0     0  949  ...     0      0     0      0
+bird              45           0     0  935  ...     0      0     0      0
+cat               42           0     0  951  ...     0      0     0      0
+deer               5           0     0  973  ...     0      0     0      0
+dog               34           0     0  959  ...     0      0     0      0
+frog              27           0     0  939  ...     0      0     0      0
+horse             22           0     0  977  ...     0      0     0      0
+ship              31           0     0  965  ...     0      0     0      0
+truck             35           0     0  965  ...     0      0     0      0
+
+[10 rows x 10 columns]
+
+--- Top 5 Misclassifications ---
+  horse      → cat       : 977 times
+  deer       → cat       : 973 times
+  truck      → cat       : 965 times
+  ship       → cat       : 965 times
+  dog        → cat       : 959 times

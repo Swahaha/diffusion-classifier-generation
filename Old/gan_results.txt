@@ -1,0 +1,16 @@
+nohup: ignoring input
+Using device: cuda
+Loaded generator from checkpoints/gan/generator_100.pt (epoch 100)
+Saving analysis results to: analysis/gan_analysis_20250419_231348
+Saved generated samples for class: plane
+Saved generated samples for class: car
+Saved generated samples for class: bird
+Saved generated samples for class: cat
+Saved generated samples for class: deer
+Saved generated samples for class: dog
+Saved generated samples for class: frog
+Saved generated samples for class: horse
+Saved generated samples for class: ship
+Saved generated samples for class: truck
+Saved real vs generated comparison
+Saved training progress analysis

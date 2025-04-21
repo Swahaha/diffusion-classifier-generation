@@ -1,0 +1,619 @@
+Epoch 0:
+Train Loss: 1.5733, Train Acc: 0.4109
+Val Loss: 1.5885, Val Acc: 0.4490
+Saved model to ./resnet_checkpoint/resnet_best_new_data_epoch_0.pth
+
+Epoch 1:
+Train Loss: 1.0699, Train Acc: 0.6161
+Val Loss: 1.0950, Val Acc: 0.6135
+Saved model to ./resnet_checkpoint/resnet_best_new_data_epoch_1.pth
+
+Epoch 2:
+Train Loss: 0.8379, Train Acc: 0.7026
+Val Loss: 1.0401, Val Acc: 0.6263
+Saved model to ./resnet_checkpoint/resnet_best_new_data_epoch_2.pth
+
+Epoch 3:
+Train Loss: 0.6923, Train Acc: 0.7583
+Val Loss: 0.9009, Val Acc: 0.6941
+Saved model to ./resnet_checkpoint/resnet_best_new_data_epoch_3.pth
+
+Epoch 4:
+Train Loss: 0.5971, Train Acc: 0.7918
+Val Loss: 0.7018, Val Acc: 0.7676
+Saved model to ./resnet_checkpoint/resnet_best_new_data_epoch_4.pth
+
+Epoch 5:
+Train Loss: 0.5318, Train Acc: 0.8119
+Val Loss: 0.7563, Val Acc: 0.7553
+
+Epoch 6:
+Train Loss: 0.4746, Train Acc: 0.8323
+Val Loss: 0.7009, Val Acc: 0.7633
+
+Epoch 7:
+Train Loss: 0.4306, Train Acc: 0.8496
+Val Loss: 0.7233, Val Acc: 0.7663
+
+Epoch 8:
+Train Loss: 0.3940, Train Acc: 0.8631
+Val Loss: 0.7222, Val Acc: 0.7661
+
+Epoch 9:
+Train Loss: 0.3541, Train Acc: 0.8762
+Val Loss: 0.7005, Val Acc: 0.7804
+Saved model to ./resnet_checkpoint/resnet_best_new_data_epoch_9.pth
+
+Epoch 10:
+Train Loss: 0.3213, Train Acc: 0.8864
+Val Loss: 0.7088, Val Acc: 0.7818
+Saved model to ./resnet_checkpoint/resnet_best_new_data_epoch_10.pth
+
+Epoch 11:
+Train Loss: 0.3026, Train Acc: 0.8916
+Val Loss: 0.7005, Val Acc: 0.7875
+Saved model to ./resnet_checkpoint/resnet_best_new_data_epoch_11.pth
+
+Epoch 12:
+Train Loss: 0.2773, Train Acc: 0.9027
+Val Loss: 0.8040, Val Acc: 0.7629
+
+Epoch 13:
+Train Loss: 0.2495, Train Acc: 0.9115
+Val Loss: 0.7893, Val Acc: 0.7706
+
+Epoch 14:
+Train Loss: 0.2337, Train Acc: 0.9161
+Val Loss: 0.7747, Val Acc: 0.7849
+
+Epoch 15:
+Train Loss: 0.2248, Train Acc: 0.9189
+Val Loss: 0.7444, Val Acc: 0.7886
+Saved model to ./resnet_checkpoint/resnet_best_new_data_epoch_15.pth
+
+Epoch 16:
+Train Loss: 0.2021, Train Acc: 0.9281
+Val Loss: 1.0627, Val Acc: 0.7461
+
+Epoch 17:
+Train Loss: 0.1976, Train Acc: 0.9297
+Val Loss: 0.8487, Val Acc: 0.7739
+
+Epoch 18:
+Train Loss: 0.1886, Train Acc: 0.9333
+Val Loss: 0.8806, Val Acc: 0.7798
+
+Epoch 19:
+Train Loss: 0.1750, Train Acc: 0.9379
+Val Loss: 0.8142, Val Acc: 0.7861
+
+Epoch 20:
+Train Loss: 0.1647, Train Acc: 0.9410
+Val Loss: 0.7775, Val Acc: 0.7965
+Saved model to ./resnet_checkpoint/resnet_best_new_data_epoch_20.pth
+
+Epoch 21:
+Train Loss: 0.1501, Train Acc: 0.9461
+Val Loss: 1.0517, Val Acc: 0.7553
+
+Epoch 22:
+Train Loss: 0.1488, Train Acc: 0.9469
+Val Loss: 1.0612, Val Acc: 0.7510
+
+Epoch 23:
+Train Loss: 0.1422, Train Acc: 0.9506
+Val Loss: 0.9299, Val Acc: 0.7680
+
+Epoch 24:
+Train Loss: 0.1345, Train Acc: 0.9521
+Val Loss: 0.8298, Val Acc: 0.7929
+
+Epoch 25:
+Train Loss: 0.1309, Train Acc: 0.9532
+Val Loss: 0.8685, Val Acc: 0.7890
+
+Epoch 26:
+Train Loss: 0.1358, Train Acc: 0.9514
+Val Loss: 0.8628, Val Acc: 0.7843
+
+Epoch 27:
+Train Loss: 0.1203, Train Acc: 0.9569
+Val Loss: 1.0635, Val Acc: 0.7606
+
+Epoch 28:
+Train Loss: 0.1148, Train Acc: 0.9594
+Val Loss: 0.9089, Val Acc: 0.7922
+
+Epoch 29:
+Train Loss: 0.1215, Train Acc: 0.9561
+Val Loss: 0.9282, Val Acc: 0.7782
+
+Epoch 30:
+Train Loss: 0.0469, Train Acc: 0.9861
+Val Loss: 0.6837, Val Acc: 0.8290
+Saved model to ./resnet_checkpoint/resnet_best_new_data_epoch_30.pth
+
+Epoch 31:
+Train Loss: 0.0183, Train Acc: 0.9973
+Val Loss: 0.6932, Val Acc: 0.8302
+Saved model to ./resnet_checkpoint/resnet_best_new_data_epoch_31.pth
+
+Epoch 32:
+Train Loss: 0.0127, Train Acc: 0.9987
+Val Loss: 0.7059, Val Acc: 0.8306
+Saved model to ./resnet_checkpoint/resnet_best_new_data_epoch_32.pth
+
+Epoch 33:
+Train Loss: 0.0096, Train Acc: 0.9994
+Val Loss: 0.7148, Val Acc: 0.8308
+Saved model to ./resnet_checkpoint/resnet_best_new_data_epoch_33.pth
+
+Epoch 34:
+Train Loss: 0.0079, Train Acc: 0.9996
+Val Loss: 0.7221, Val Acc: 0.8306
+
+Epoch 35:
+Train Loss: 0.0068, Train Acc: 0.9997
+Val Loss: 0.7308, Val Acc: 0.8288
+
+Epoch 36:
+Train Loss: 0.0057, Train Acc: 0.9999
+Val Loss: 0.7403, Val Acc: 0.8324
+Saved model to ./resnet_checkpoint/resnet_best_new_data_epoch_36.pth
+
+Epoch 37:
+Train Loss: 0.0052, Train Acc: 0.9999
+Val Loss: 0.7408, Val Acc: 0.8290
+
+Epoch 38:
+Train Loss: 0.0048, Train Acc: 0.9999
+Val Loss: 0.7457, Val Acc: 0.8310
+
+Epoch 39:
+Train Loss: 0.0041, Train Acc: 1.0000
+Val Loss: 0.7500, Val Acc: 0.8306
+
+Epoch 40:
+Train Loss: 0.0041, Train Acc: 0.9999
+Val Loss: 0.7507, Val Acc: 0.8318
+
+Epoch 41:
+Train Loss: 0.0036, Train Acc: 1.0000
+Val Loss: 0.7586, Val Acc: 0.8310
+
+Epoch 42:
+Train Loss: 0.0033, Train Acc: 1.0000
+Val Loss: 0.7597, Val Acc: 0.8310
+
+Epoch 43:
+Train Loss: 0.0032, Train Acc: 1.0000
+Val Loss: 0.7662, Val Acc: 0.8320
+
+Epoch 44:
+Train Loss: 0.0030, Train Acc: 1.0000
+Val Loss: 0.7647, Val Acc: 0.8320
+
+Epoch 45:
+Train Loss: 0.0029, Train Acc: 1.0000
+Val Loss: 0.7684, Val Acc: 0.8308
+
+Epoch 46:
+Train Loss: 0.0027, Train Acc: 1.0000
+Val Loss: 0.7639, Val Acc: 0.8314
+
+Epoch 47:
+Train Loss: 0.0028, Train Acc: 1.0000
+Val Loss: 0.7594, Val Acc: 0.8314
+
+Epoch 48:
+Train Loss: 0.0026, Train Acc: 1.0000
+Val Loss: 0.7675, Val Acc: 0.8304
+
+Epoch 49:
+Train Loss: 0.0025, Train Acc: 1.0000
+Val Loss: 0.7739, Val Acc: 0.8306
+
+Epoch 50:
+Train Loss: 0.0023, Train Acc: 1.0000
+Val Loss: 0.7777, Val Acc: 0.8320
+
+Epoch 51:
+Train Loss: 0.0023, Train Acc: 1.0000
+Val Loss: 0.7712, Val Acc: 0.8324
+
+Epoch 52:
+Train Loss: 0.0022, Train Acc: 1.0000
+Val Loss: 0.7773, Val Acc: 0.8324
+
+Epoch 53:
+Train Loss: 0.0022, Train Acc: 1.0000
+Val Loss: 0.7725, Val Acc: 0.8325
+Saved model to ./resnet_checkpoint/resnet_best_new_data_epoch_53.pth
+
+Epoch 54:
+Train Loss: 0.0021, Train Acc: 1.0000
+Val Loss: 0.7697, Val Acc: 0.8312
+
+Epoch 55:
+Train Loss: 0.0020, Train Acc: 1.0000
+Val Loss: 0.7779, Val Acc: 0.8316
+
+Epoch 56:
+Train Loss: 0.0020, Train Acc: 1.0000
+Val Loss: 0.7756, Val Acc: 0.8333
+Saved model to ./resnet_checkpoint/resnet_best_new_data_epoch_56.pth
+
+Epoch 57:
+Train Loss: 0.0020, Train Acc: 1.0000
+Val Loss: 0.7753, Val Acc: 0.8314
+
+Epoch 58:
+Train Loss: 0.0020, Train Acc: 1.0000
+Val Loss: 0.7777, Val Acc: 0.8331
+
+Epoch 59:
+Train Loss: 0.0018, Train Acc: 1.0000
+Val Loss: 0.7818, Val Acc: 0.8322
+
+Epoch 60:
+Train Loss: 0.0018, Train Acc: 1.0000
+Val Loss: 0.7775, Val Acc: 0.8314
+
+Epoch 61:
+Train Loss: 0.0018, Train Acc: 1.0000
+Val Loss: 0.7740, Val Acc: 0.8312
+
+Epoch 62:
+Train Loss: 0.0019, Train Acc: 1.0000
+Val Loss: 0.7783, Val Acc: 0.8312
+
+Epoch 63:
+Train Loss: 0.0018, Train Acc: 1.0000
+Val Loss: 0.7795, Val Acc: 0.8320
+
+Epoch 64:
+Train Loss: 0.0018, Train Acc: 1.0000
+Val Loss: 0.7768, Val Acc: 0.8325
+
+Epoch 65:
+Train Loss: 0.0018, Train Acc: 1.0000
+Val Loss: 0.7758, Val Acc: 0.8325
+
+Epoch 66:
+Train Loss: 0.0018, Train Acc: 1.0000
+Val Loss: 0.7810, Val Acc: 0.8298
+
+Epoch 67:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7796, Val Acc: 0.8310
+
+Epoch 68:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7766, Val Acc: 0.8325
+
+Epoch 69:
+Train Loss: 0.0019, Train Acc: 1.0000
+Val Loss: 0.7856, Val Acc: 0.8304
+
+Epoch 70:
+Train Loss: 0.0018, Train Acc: 1.0000
+Val Loss: 0.7853, Val Acc: 0.8316
+
+Epoch 71:
+Train Loss: 0.0018, Train Acc: 1.0000
+Val Loss: 0.7724, Val Acc: 0.8306
+
+Epoch 72:
+Train Loss: 0.0018, Train Acc: 1.0000
+Val Loss: 0.7786, Val Acc: 0.8325
+
+Epoch 73:
+Train Loss: 0.0018, Train Acc: 1.0000
+Val Loss: 0.7847, Val Acc: 0.8310
+
+Epoch 74:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7797, Val Acc: 0.8318
+
+Epoch 75:
+Train Loss: 0.0018, Train Acc: 1.0000
+Val Loss: 0.7810, Val Acc: 0.8325
+
+Epoch 76:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7772, Val Acc: 0.8327
+
+Epoch 77:
+Train Loss: 0.0018, Train Acc: 1.0000
+Val Loss: 0.7803, Val Acc: 0.8320
+
+Epoch 78:
+Train Loss: 0.0018, Train Acc: 1.0000
+Val Loss: 0.7772, Val Acc: 0.8327
+
+Epoch 79:
+Train Loss: 0.0018, Train Acc: 1.0000
+Val Loss: 0.7813, Val Acc: 0.8302
+
+Epoch 80:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7772, Val Acc: 0.8312
+
+Epoch 81:
+Train Loss: 0.0018, Train Acc: 0.9999
+Val Loss: 0.7801, Val Acc: 0.8312
+
+Epoch 82:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7771, Val Acc: 0.8318
+
+Epoch 83:
+Train Loss: 0.0018, Train Acc: 1.0000
+Val Loss: 0.7810, Val Acc: 0.8314
+
+Epoch 84:
+Train Loss: 0.0018, Train Acc: 1.0000
+Val Loss: 0.7753, Val Acc: 0.8300
+
+Epoch 85:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7768, Val Acc: 0.8304
+
+Epoch 86:
+Train Loss: 0.0018, Train Acc: 1.0000
+Val Loss: 0.7809, Val Acc: 0.8310
+
+Epoch 87:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7804, Val Acc: 0.8312
+
+Epoch 88:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7753, Val Acc: 0.8325
+
+Epoch 89:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7770, Val Acc: 0.8308
+
+Epoch 90:
+Train Loss: 0.0016, Train Acc: 1.0000
+Val Loss: 0.7786, Val Acc: 0.8298
+
+Epoch 91:
+Train Loss: 0.0016, Train Acc: 1.0000
+Val Loss: 0.7755, Val Acc: 0.8310
+
+Epoch 92:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7797, Val Acc: 0.8327
+
+Epoch 93:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7789, Val Acc: 0.8324
+
+Epoch 94:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7758, Val Acc: 0.8310
+
+Epoch 95:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7799, Val Acc: 0.8322
+
+Epoch 96:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7881, Val Acc: 0.8308
+
+Epoch 97:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7796, Val Acc: 0.8324
+
+Epoch 98:
+Train Loss: 0.0016, Train Acc: 1.0000
+Val Loss: 0.7827, Val Acc: 0.8314
+
+Epoch 99:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7754, Val Acc: 0.8302
+
+Epoch 100:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7823, Val Acc: 0.8308
+
+Epoch 101:
+Train Loss: 0.0016, Train Acc: 1.0000
+Val Loss: 0.7750, Val Acc: 0.8312
+
+Epoch 102:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7769, Val Acc: 0.8306
+
+Epoch 103:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7839, Val Acc: 0.8314
+
+Epoch 104:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7757, Val Acc: 0.8324
+
+Epoch 105:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7806, Val Acc: 0.8308
+
+Epoch 106:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7788, Val Acc: 0.8306
+
+Epoch 107:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7761, Val Acc: 0.8316
+
+Epoch 108:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7841, Val Acc: 0.8314
+
+Epoch 109:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7767, Val Acc: 0.8314
+
+Epoch 110:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7835, Val Acc: 0.8308
+
+Epoch 111:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7811, Val Acc: 0.8304
+
+Epoch 112:
+Train Loss: 0.0018, Train Acc: 1.0000
+Val Loss: 0.7792, Val Acc: 0.8314
+
+Epoch 113:
+Train Loss: 0.0016, Train Acc: 1.0000
+Val Loss: 0.7765, Val Acc: 0.8300
+
+Epoch 114:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7796, Val Acc: 0.8314
+
+Epoch 115:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7814, Val Acc: 0.8324
+
+Epoch 116:
+Train Loss: 0.0016, Train Acc: 1.0000
+Val Loss: 0.7785, Val Acc: 0.8320
+
+Epoch 117:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7882, Val Acc: 0.8298
+
+Epoch 118:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7810, Val Acc: 0.8312
+
+Epoch 119:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7810, Val Acc: 0.8306
+
+Epoch 120:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7792, Val Acc: 0.8292
+
+Epoch 121:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7793, Val Acc: 0.8312
+
+Epoch 122:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7738, Val Acc: 0.8314
+
+Epoch 123:
+Train Loss: 0.0016, Train Acc: 1.0000
+Val Loss: 0.7771, Val Acc: 0.8304
+
+Epoch 124:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7766, Val Acc: 0.8312
+
+Epoch 125:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7768, Val Acc: 0.8304
+
+Epoch 126:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7794, Val Acc: 0.8310
+
+Epoch 127:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7846, Val Acc: 0.8310
+
+Epoch 128:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7766, Val Acc: 0.8306
+
+Epoch 129:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7779, Val Acc: 0.8306
+
+Epoch 130:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7771, Val Acc: 0.8327
+
+Epoch 131:
+Train Loss: 0.0016, Train Acc: 1.0000
+Val Loss: 0.7777, Val Acc: 0.8316
+
+Epoch 132:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7818, Val Acc: 0.8314
+
+Epoch 133:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7752, Val Acc: 0.8312
+
+Epoch 134:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7804, Val Acc: 0.8310
+
+Epoch 135:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7799, Val Acc: 0.8314
+
+Epoch 136:
+Train Loss: 0.0016, Train Acc: 1.0000
+Val Loss: 0.7785, Val Acc: 0.8320
+
+Epoch 137:
+Train Loss: 0.0016, Train Acc: 1.0000
+Val Loss: 0.7790, Val Acc: 0.8314
+
+Epoch 138:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7721, Val Acc: 0.8312
+
+Epoch 139:
+Train Loss: 0.0018, Train Acc: 1.0000
+Val Loss: 0.7813, Val Acc: 0.8302
+
+Epoch 140:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7743, Val Acc: 0.8325
+
+Epoch 141:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7746, Val Acc: 0.8335
+Saved model to ./resnet_checkpoint/resnet_best_new_data_epoch_141.pth
+
+Epoch 142:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7775, Val Acc: 0.8312
+
+Epoch 143:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7803, Val Acc: 0.8296
+
+Epoch 144:
+Train Loss: 0.0018, Train Acc: 1.0000
+Val Loss: 0.7799, Val Acc: 0.8306
+
+Epoch 145:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7756, Val Acc: 0.8314
+
+Epoch 146:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7757, Val Acc: 0.8308
+
+Epoch 147:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7789, Val Acc: 0.8312
+
+Epoch 148:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7831, Val Acc: 0.8310
+
+Epoch 149:
+Train Loss: 0.0017, Train Acc: 1.0000
+Val Loss: 0.7790, Val Acc: 0.8324
+
+Training complete. Best val acc: 0.8335

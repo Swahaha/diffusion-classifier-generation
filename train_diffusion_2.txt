@@ -1,0 +1,244 @@
+nohup: ignoring input
+Using device: cuda
+Loading checkpoint from checkpoints/diffusion/checkpoint_epoch_100.pth
+Resuming training from epoch 100
+Epoch 101/300, Loss: 0.0344
+Epoch 102/300, Loss: 0.0349
+Epoch 103/300, Loss: 0.0344
+Epoch 104/300, Loss: 0.0337
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-10.657521..11.21591].
+Epoch 105/300, Loss: 0.0338
+Epoch 106/300, Loss: 0.0336
+Epoch 107/300, Loss: 0.0340
+Epoch 108/300, Loss: 0.0338
+Epoch 109/300, Loss: 0.0340
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-18.62886..17.828918].
+Epoch 110/300, Loss: 0.0340
+Epoch 111/300, Loss: 0.0343
+Epoch 112/300, Loss: 0.0339
+Epoch 113/300, Loss: 0.0338
+Epoch 114/300, Loss: 0.0335
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-12.583696..12.054434].
+Epoch 115/300, Loss: 0.0340
+Epoch 116/300, Loss: 0.0341
+Epoch 117/300, Loss: 0.0342
+Epoch 118/300, Loss: 0.0338
+Epoch 119/300, Loss: 0.0341
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-17.083277..19.461624].
+Epoch 120/300, Loss: 0.0334
+Epoch 121/300, Loss: 0.0338
+Epoch 122/300, Loss: 0.0340
+Epoch 123/300, Loss: 0.0339
+Epoch 124/300, Loss: 0.0340
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-17.134628..11.60356].
+Epoch 125/300, Loss: 0.0340
+Epoch 126/300, Loss: 0.0336
+Epoch 127/300, Loss: 0.0345
+Epoch 128/300, Loss: 0.0331
+Epoch 129/300, Loss: 0.0338
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-12.897577..11.77808].
+Epoch 130/300, Loss: 0.0339
+Epoch 131/300, Loss: 0.0339
+Epoch 132/300, Loss: 0.0334
+Epoch 133/300, Loss: 0.0340
+Epoch 134/300, Loss: 0.0334
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-14.16637..13.859427].
+Epoch 135/300, Loss: 0.0337
+Epoch 136/300, Loss: 0.0340
+Epoch 137/300, Loss: 0.0334
+Epoch 138/300, Loss: 0.0336
+Epoch 139/300, Loss: 0.0338
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-11.326988..11.792092].
+Epoch 140/300, Loss: 0.0333
+Epoch 141/300, Loss: 0.0339
+Epoch 142/300, Loss: 0.0342
+Epoch 143/300, Loss: 0.0336
+Epoch 144/300, Loss: 0.0339
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-12.026573..12.123491].
+Epoch 145/300, Loss: 0.0331
+Epoch 146/300, Loss: 0.0337
+Epoch 147/300, Loss: 0.0338
+Epoch 148/300, Loss: 0.0335
+Epoch 149/300, Loss: 0.0334
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-18.528278..12.406659].
+Epoch 150/300, Loss: 0.0333
+Epoch 151/300, Loss: 0.0338
+Epoch 152/300, Loss: 0.0335
+Epoch 153/300, Loss: 0.0334
+Epoch 154/300, Loss: 0.0330
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-16.753191..14.28288].
+Epoch 155/300, Loss: 0.0329
+Epoch 156/300, Loss: 0.0338
+Epoch 157/300, Loss: 0.0340
+Epoch 158/300, Loss: 0.0340
+Epoch 159/300, Loss: 0.0336
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-12.05257..13.442695].
+Epoch 160/300, Loss: 0.0338
+Epoch 161/300, Loss: 0.0331
+Epoch 162/300, Loss: 0.0333
+Epoch 163/300, Loss: 0.0330
+Epoch 164/300, Loss: 0.0330
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-12.888364..10.820008].
+Epoch 165/300, Loss: 0.0335
+Epoch 166/300, Loss: 0.0336
+Epoch 167/300, Loss: 0.0334
+Epoch 168/300, Loss: 0.0330
+Epoch 169/300, Loss: 0.0335
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-12.738821..12.238143].
+Epoch 170/300, Loss: 0.0328
+Epoch 171/300, Loss: 0.0333
+Epoch 172/300, Loss: 0.0332
+Epoch 173/300, Loss: 0.0335
+Epoch 174/300, Loss: 0.0338
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-13.799153..16.824524].
+Epoch 175/300, Loss: 0.0331
+Epoch 176/300, Loss: 0.0332
+Epoch 177/300, Loss: 0.0336
+Epoch 178/300, Loss: 0.0334
+Epoch 179/300, Loss: 0.0334
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-22.633984..19.678436].
+Epoch 180/300, Loss: 0.0333
+Epoch 181/300, Loss: 0.0337
+Epoch 182/300, Loss: 0.0332
+Epoch 183/300, Loss: 0.0332
+Epoch 184/300, Loss: 0.0332
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-14.98416..10.202055].
+Epoch 185/300, Loss: 0.0331
+Epoch 186/300, Loss: 0.0332
+Epoch 187/300, Loss: 0.0327
+Epoch 188/300, Loss: 0.0327
+Epoch 189/300, Loss: 0.0335
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-12.619382..13.515307].
+Epoch 190/300, Loss: 0.0328
+Epoch 191/300, Loss: 0.0331
+Epoch 192/300, Loss: 0.0332
+Epoch 193/300, Loss: 0.0329
+Epoch 194/300, Loss: 0.0333
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-16.607079..17.87993].
+Epoch 195/300, Loss: 0.0331
+Epoch 196/300, Loss: 0.0333
+Epoch 197/300, Loss: 0.0328
+Epoch 198/300, Loss: 0.0328
+Epoch 199/300, Loss: 0.0332
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-11.733025..8.609097].
+Epoch 200/300, Loss: 0.0335
+Epoch 201/300, Loss: 0.0331
+Epoch 202/300, Loss: 0.0327
+Epoch 203/300, Loss: 0.0326
+Epoch 204/300, Loss: 0.0330
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-14.3581705..13.7034025].
+Epoch 205/300, Loss: 0.0334
+Epoch 206/300, Loss: 0.0328
+Epoch 207/300, Loss: 0.0329
+Epoch 208/300, Loss: 0.0337
+Epoch 209/300, Loss: 0.0328
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-17.586779..10.719055].
+Epoch 210/300, Loss: 0.0329
+Epoch 211/300, Loss: 0.0324
+Epoch 212/300, Loss: 0.0329
+Epoch 213/300, Loss: 0.0333
+Epoch 214/300, Loss: 0.0329
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-15.335162..19.416714].
+Epoch 215/300, Loss: 0.0329
+Epoch 216/300, Loss: 0.0326
+Epoch 217/300, Loss: 0.0334
+Epoch 218/300, Loss: 0.0323
+Epoch 219/300, Loss: 0.0327
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-15.103303..16.664215].
+Epoch 220/300, Loss: 0.0330
+Epoch 221/300, Loss: 0.0325
+Epoch 222/300, Loss: 0.0327
+Epoch 223/300, Loss: 0.0327
+Epoch 224/300, Loss: 0.0335
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-15.336717..15.306202].
+Epoch 225/300, Loss: 0.0328
+Epoch 226/300, Loss: 0.0329
+Epoch 227/300, Loss: 0.0329
+Epoch 228/300, Loss: 0.0325
+Epoch 229/300, Loss: 0.0329
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-16.776573..24.893114].
+Epoch 230/300, Loss: 0.0329
+Epoch 231/300, Loss: 0.0326
+Epoch 232/300, Loss: 0.0329
+Epoch 233/300, Loss: 0.0329
+Epoch 234/300, Loss: 0.0333
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-11.80918..11.955512].
+Epoch 235/300, Loss: 0.0331
+Epoch 236/300, Loss: 0.0327
+Epoch 237/300, Loss: 0.0325
+Epoch 238/300, Loss: 0.0326
+Epoch 239/300, Loss: 0.0331
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-19.22876..15.0095415].
+Epoch 240/300, Loss: 0.0329
+Epoch 241/300, Loss: 0.0328
+Epoch 242/300, Loss: 0.0327
+Epoch 243/300, Loss: 0.0327
+Epoch 244/300, Loss: 0.0326
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-19.301851..21.65496].
+Epoch 245/300, Loss: 0.0327
+Epoch 246/300, Loss: 0.0329
+Epoch 247/300, Loss: 0.0329
+Epoch 248/300, Loss: 0.0329
+Epoch 249/300, Loss: 0.0328
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-15.174222..16.940742].
+Epoch 250/300, Loss: 0.0329
+Epoch 251/300, Loss: 0.0327
+Epoch 252/300, Loss: 0.0332
+Epoch 253/300, Loss: 0.0330
+Epoch 254/300, Loss: 0.0331
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-16.295..18.86286].
+Epoch 255/300, Loss: 0.0325
+Epoch 256/300, Loss: 0.0322
+Epoch 257/300, Loss: 0.0327
+Epoch 258/300, Loss: 0.0325
+Epoch 259/300, Loss: 0.0323
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-15.984018..21.437368].
+Epoch 260/300, Loss: 0.0322
+Epoch 261/300, Loss: 0.0325
+Epoch 262/300, Loss: 0.0329
+Epoch 263/300, Loss: 0.0326
+Epoch 264/300, Loss: 0.0323
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-17.710161..19.954557].
+Epoch 265/300, Loss: 0.0327
+Epoch 266/300, Loss: 0.0332
+Epoch 267/300, Loss: 0.0332
+Epoch 268/300, Loss: 0.0329
+Epoch 269/300, Loss: 0.0327
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-17.821686..19.361204].
+Epoch 270/300, Loss: 0.0325
+Epoch 271/300, Loss: 0.0330
+Epoch 272/300, Loss: 0.0328
+Epoch 273/300, Loss: 0.0319
+Epoch 274/300, Loss: 0.0330
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-20.28898..21.068762].
+Epoch 275/300, Loss: 0.0329
+Epoch 276/300, Loss: 0.0329
+Epoch 277/300, Loss: 0.0331
+Epoch 278/300, Loss: 0.0327
+Epoch 279/300, Loss: 0.0326
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-22.053555..21.404182].
+Epoch 280/300, Loss: 0.0325
+Epoch 281/300, Loss: 0.0325
+Epoch 282/300, Loss: 0.0326
+Epoch 283/300, Loss: 0.0322
+Epoch 284/300, Loss: 0.0324
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-13.818896..19.0481].
+Epoch 285/300, Loss: 0.0325
+Epoch 286/300, Loss: 0.0328
+Epoch 287/300, Loss: 0.0320
+Epoch 288/300, Loss: 0.0329
+Epoch 289/300, Loss: 0.0325
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-17.82491..22.866116].
+Epoch 290/300, Loss: 0.0327
+Epoch 291/300, Loss: 0.0329
+Epoch 292/300, Loss: 0.0324
+Epoch 293/300, Loss: 0.0324
+Epoch 294/300, Loss: 0.0326
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-16.879347..16.71638].
+Epoch 295/300, Loss: 0.0325
+Epoch 296/300, Loss: 0.0324
+Epoch 297/300, Loss: 0.0322
+Epoch 298/300, Loss: 0.0320
+Epoch 299/300, Loss: 0.0325
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-23.713087..20.085453].
+Epoch 300/300, Loss: 0.0328

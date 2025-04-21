@@ -1,0 +1,23 @@
+Real class distribution:
+plane: 10
+car: 8
+bird: 5
+cat: 8
+deer: 6
+dog: 2
+frog: 7
+horse: 12
+ship: 2
+truck: 4
+
+Generated class distribution:
+plane: 4
+car: 5
+bird: 8
+cat: 8
+deer: 5
+dog: 4
+frog: 7
+horse: 8
+ship: 5
+truck: 10

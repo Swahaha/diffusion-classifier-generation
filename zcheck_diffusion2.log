@@ -1,0 +1,43 @@
+nohup: ignoring input
+=== DEBUG START ===
+Using device: cuda
+REAL weights         mean=-1.4976e-03 std=4.4446e-02 min=-9.7025e-01 max=1.0983e+00
+
+--- Timestep t=999 ---
+x_t                  mean=2.1531e-04 std=9.9953e-01 min=-5.6028e+00 max=4.6838e+00
+eps_pred             mean=5.2339e-03 std=9.8805e-01 min=-4.6215e+00 max=5.5411e+00
+x0_pred              mean=-7.8996e-01 std=3.1286e+02 min=-1.7542e+03 max=1.4643e+03
+
+--- Timestep t=900 ---
+x_t                  mean=-8.0823e-01 std=1.8178e+01 min=-9.4741e+01 max=9.6135e+01
+eps_pred             mean=1.4974e+00 std=1.7538e+01 min=-9.1877e+01 max=9.2337e+01
+x0_pred              mean=-1.4024e+02 std=2.1723e+03 min=-1.1379e+04 max=1.1436e+04
+
+--- Timestep t=800 ---
+x_t                  mean=-2.5390e+01 std=2.1947e+02 min=-1.1612e+03 max=1.1422e+03
+eps_pred             mean=3.4146e+01 std=2.1189e+02 min=-1.0918e+03 max=1.1309e+03
+x0_pred              mean=-1.5327e+03 std=1.1104e+04 min=-5.9011e+04 max=5.7517e+04
+
+--- Timestep t=600 ---
+x_t                  mean=-3.2397e+03 std=1.3538e+04 min=-7.3375e+04 max=6.8712e+04
+eps_pred             mean=3.7319e+03 std=1.3082e+04 min=-6.5753e+04 max=7.1718e+04
+x0_pred              mean=-4.3300e+04 std=1.6540e+05 min=-9.0064e+05 max=8.3565e+05
+
+--- Timestep t=400 ---
+x_t                  mean=-9.3498e+04 std=2.8158e+05 min=-1.5661e+06 max=1.4471e+06
+eps_pred             mean=1.0284e+05 std=2.7216e+05 min=-1.4287e+06 max=1.5339e+06
+x0_pred              mean=-4.2241e+05 std=1.1954e+06 min=-6.6904e+06 max=6.2051e+06
+
+--- Timestep t=200 ---
+x_t                  mean=-9.4597e+05 std=2.3571e+06 min=-1.3381e+07 max=1.2495e+07
+eps_pred             mean=1.0182e+06 std=2.2783e+06 min=-1.2306e+07 max=1.3100e+07
+x0_pred              mean=-1.9044e+06 std=4.5574e+06 min=-2.5996e+07 max=2.4328e+07
+
+--- Timestep t=0 ---
+x_t                  mean=-4.7074e+06 std=1.0260e+07 min=-5.9217e+07 max=5.5681e+07
+eps_pred             mean=5.0000e+06 std=9.9161e+06 min=-5.4768e+07 max=5.8167e+07
+x0_pred              mean=-4.7577e+06 std=1.0359e+07 min=-5.9800e+07 max=5.6231e+07
+
+--- After final p_sample (t=0) ---
+sampled x_0          mean=-4.7569e+06 std=1.0357e+07 min=-5.9790e+07 max=5.6222e+07
+=== DEBUG END ===

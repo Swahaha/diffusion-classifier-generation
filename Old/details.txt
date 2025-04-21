@@ -1,0 +1,75 @@
+# Investigating Data Augmentation with Diffusion and GANs
+
+This project implements class-conditional image generation on CIFAR-10 using two different approaches:
+1. DCGAN (Deep Convolutional Generative Adversarial Network)
+2. DDPM (Denoising Diffusion Probabilistic Model) with U-Net backbone
+
+## Project Structure
+
+```
+diffusion-data-aug/
+├── datasets/
+│   └── cifar10.py          # CIFAR-10 dataset loading and preprocessing
+├── models/
+│   ├── gan.py              # DCGAN generator and discriminator
+│   └── diffusion.py        # U-Net based diffusion model
+├── utils.py                # Utility functions for training and visualization
+├── train_gan.py            # Training script for GAN
+├── train_diffusion.py      # Training script for diffusion model
+└── requirements.txt        # Project dependencies
+```
+
+## Setup
+
+1. Create a virtual environment (recommended):
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+## Training
+
+### Training the GAN
+```bash
+python train_gan.py
+```
+
+### Training the Diffusion Model
+```bash
+python train_diffusion.py
+```
+
+## Features
+
+- Class-conditional image generation for CIFAR-10
+- DCGAN implementation with label embeddings
+- DDPM implementation with U-Net backbone
+- Automatic checkpointing and sample visualization
+- GPU support with automatic device detection
+
+## Model Details
+
+### DCGAN
+- Generator: Upsampling network with label conditioning
+- Discriminator: Downsampling network with auxiliary classifier
+- Loss: Binary cross-entropy for adversarial loss + cross-entropy for classification
+
+### Diffusion Model
+- U-Net backbone with time and label embeddings
+- Linear noise schedule
+- Denoising score matching objective
+
+## Results
+
+Generated samples are saved in:
+- `results/gan/` for GAN samples
+- `results/diffusion/` for diffusion model samples
+
+Model checkpoints are saved in:
+- `checkpoints/gan/` for GAN models
+- `checkpoints/diffusion/` for diffusion model

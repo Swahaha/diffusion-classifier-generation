@@ -1,0 +1,39 @@
+nohup: ignoring input
+Using device: cuda
+Input size: 210998
+
+=== Noise Prediction Statistics ===
+t=   0 | mean=1.4832e-02, std=9.8544e-01, min=-5.0842e+00, max=5.1705e+00
+t= 250 | mean=4.0924e-03, std=9.9033e-01, min=-4.7385e+00, max=4.7211e+00
+t= 500 | mean=3.0107e-03, std=9.9096e-01, min=-4.5913e+00, max=4.8988e+00
+t= 750 | mean=2.3712e-03, std=9.8843e-01, min=-4.6632e+00, max=4.5604e+00
+t= 999 | mean=5.6601e-03, std=9.8738e-01, min=-5.2553e+00, max=4.9883e+00
+
+Sampling final weight vector...
+
+--- Real checkpoint weights distribution ---
+ count: 210998
+   mean: -1.345091e-03
+    std: 3.630883e-02
+    min: -8.097589e-01
+    5%:  -4.957577e-02
+   25%:  -1.816299e-02
+   50%:  -8.006365e-04
+   75%:  1.622857e-02
+   95%:  4.524482e-02
+    max: 8.921497e-01
+
+--- Sampled weights distribution ---
+ count: 210998
+   mean: -4.720421e+06
+    std: 1.036236e+07
+    min: -5.200078e+07
+    5%:  -1.902233e+07
+   25%:  -1.177495e+07
+   50%:  -6.698020e+06
+   75%:  1.509614e+06
+   95%:  1.506755e+07
+    max: 4.035988e+07
+
+RMSE(real, sampled)     = 1.138687e+07
+Pearson correlation     = -0.003075

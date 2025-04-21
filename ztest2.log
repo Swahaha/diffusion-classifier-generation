@@ -1,0 +1,29 @@
+nohup: ignoring input
+Traceback (most recent call last):
+  File "/home/swarajh/661/diffusion-data-aug/ztest2.py", line 52, in <module>
+    input_size = load_checkpoint_weights(os.path.join("./CNN_checkpoints/run_0/", tiny_files[0])).numel()
+  File "/home/swarajh/661/diffusion-data-aug/weight_diffusion.py", line 130, in load_checkpoint_weights
+    checkpoint = torch.load(checkpoint_path)
+  File "/home/swarajh/miniforge3/envs/hyper/lib/python3.9/site-packages/torch/serialization.py", line 1462, in load
+    return _load(
+  File "/home/swarajh/miniforge3/envs/hyper/lib/python3.9/site-packages/torch/serialization.py", line 1964, in _load
+    result = unpickler.load()
+  File "/home/swarajh/miniforge3/envs/hyper/lib/python3.9/site-packages/torch/_weights_only_unpickler.py", line 512, in load
+    self.append(self.persistent_load(pid))
+  File "/home/swarajh/miniforge3/envs/hyper/lib/python3.9/site-packages/torch/serialization.py", line 1928, in persistent_load
+    typed_storage = load_tensor(
+  File "/home/swarajh/miniforge3/envs/hyper/lib/python3.9/site-packages/torch/serialization.py", line 1900, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "/home/swarajh/miniforge3/envs/hyper/lib/python3.9/site-packages/torch/serialization.py", line 693, in default_restore_location
+    result = fn(storage, location)
+  File "/home/swarajh/miniforge3/envs/hyper/lib/python3.9/site-packages/torch/serialization.py", line 632, in _deserialize
+    return obj.to(device=device)
+  File "/home/swarajh/miniforge3/envs/hyper/lib/python3.9/site-packages/torch/storage.py", line 292, in to
+    return _to(self, device, non_blocking)
+  File "/home/swarajh/miniforge3/envs/hyper/lib/python3.9/site-packages/torch/_utils.py", line 99, in _to
+    untyped_storage = torch.UntypedStorage(self.size(), device=device)
+RuntimeError: CUDA error: out of memory
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+

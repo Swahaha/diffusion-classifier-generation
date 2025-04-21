@@ -1,0 +1,17 @@
+Using device: cuda
+Loaded real CIFAR-10: 50000 images
+Loaded model from ./diffusion_checkpoints/checkpoint_epoch_300.pth (epoch 300)
+Generating 100 samples for class: plane
+Generating 100 samples for class: car
+Generating 100 samples for class: bird
+Generating 100 samples for class: cat
+Generating 100 samples for class: deer
+Generating 100 samples for class: dog
+Generating 100 samples for class: frog
+Generating 100 samples for class: horse
+Generating 100 samples for class: ship
+Generating 100 samples for class: truck
+Generated images: (1000, 3, 32, 32)
+Real images shape: (50000, 3, 32, 32)
+Total dataset: 51000 images
+Saved combined dataset to combined_cifar10_with_diffusion_20250419_171722.npz
