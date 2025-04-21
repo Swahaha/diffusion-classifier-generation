@@ -111,3 +111,6 @@ Here is a list of possible things we could explore
 * How do different datasets affect it accuracy (sparse, regularization, etc)?
 * Do the number of samples have an impact? Are the generated NN in teh dataset or are they newly generated?
 * How do the training epochs affect the performance?
+
+## Conclusions
+* IDK man, it is working for now...
