@@ -71,14 +71,6 @@ python evaluate_generated.py --model_path path/to/generated_model.pth
 ## Generating dataset
 * Our dataset is now a set of checkpoints of classifiers trained on CIFAR-10.
 * We are using a simple TinyCNN model with 2 conv layers that can achieve about 80% validation accuracy.
-  <!-- 
-* To be able to generate the training dataset, we have a simple NN with 10 layers.
-* TinyNN is trained with the CIFAR-10 dataset a total of 10 times with a max of 500 epochs each time. 
-* For each instance, it generates 250 checkpoints with accuracy > 0.75
-* Each time it trains the TinyNN, it does a random data augmentation (random horizontal flip, random crop padding, ColorJitter)
-* At the end, there is a total of 2500 checkpoints.
-* For the base model, it is run 4 times in parallel to create a total of 10,000 checkpoints.
--->
 
 ## Training VAE
 The main purpose of this part is to train a VAE model that learns a latent representation of CNN model weights. 
@@ -100,7 +92,7 @@ This model is trained to generate neural network weights using a diffusion model
 * For each vector, adds random noise and trains the model to predict that noise using MSE loss.
 * Generates new model by sampling a random noise in the latent space, applies reverse diffusion, gets latent vector, decodes via VAE to get the new model weights.
 
-### Evaluating Results
+## Evaluating Results
 After training the VAE and Diffusion model, we evaluate the performance in generating NN capable of classifiying CIFAR-10 images. The evaluation has the following workflow
 * Sample a latent vector from the diffusion model
 * Decode it into a weight vector using the VAE and reconstructs a TinyNN 
