@@ -63,33 +63,38 @@ python evaluate_generated.py --model_path path/to/generated_model.pth
 - @rngtang -->
 
 ## Project Overview
-* Project uses a combination of VAE model and Diffusion model to generate fully trained Neural Networds in the CIFAR-10 dataset. Instead of training the NN directly, we are generating the weights using the Diffusion model.
+* Our project aims to use a combination of a VAE model and a Denoising Diffusion Probabilistic Model to generate fully trained neural networks for classifying the CIFAR-10 dataset. Instead of training the NN directly, we are generating the weights using the Diffusion model.
 
 ## Background
-* Traditionally, Diffusion models are used to generate images. But, diffusion models can be used for wide variety of applications like audio, nlp, or even Neural Networks.
+* Traditionally, Diffusion models are used to generate images. But, we aim to encode neural network weights in a way that lets us generate them.
 
 ## Methodology
 * Our project is divided into three main components: generating dataset, training model, evaluating results.
 
 ### Generating dataset
+* Our dataset is now a set of checkpoints of classifiers trained on CIFAR-10.
+* We are using a simple TinyCNN model with 2 conv layers that can achieve about 80% validation accuracy.
+  <!-- 
 * To be able to generate the training dataset, we have a simple NN with 10 layers.
 * TinyNN is trained with the CIFAR-10 dataset a total of 10 times with a max of 500 epochs each time. 
 * For each instance, it generates 250 checkpoints with accuracy > 0.75
 * Each time it trains the TinyNN, it does a random data augmentation (random horizontal flip, random crop padding, ColorJitter)
 * At the end, there is a total of 2500 checkpoints.
 * For the base model, it is run 4 times in parallel to create a total of 10,000 checkpoints.
-
+-->
 ### Training model
 The model training is divided in two parts: training VAE and training Diffusion.
 #### Training VAE
-The main purpose of this part is to train a VAE model that learns a latent representation of CNN model weights. The training works the following way:
+The main purpose of this part is to train a VAE model that learns a latent representation of CNN model weights. 
+<!--
+The training works the following way:
 * Creates dummy TinyNN to get total number of parameters
 * Uses the WeightDataset to load flattened weights from all checkpoints
 * The model takes flattened weights as input and learns to compress them into a latent space and then reconstruct them.
 * Uses Adam and StepLR scheduler for learning rate decay.
 * During training, tracks the best performance and saves it as a checkpoint. 
 * Every 10 epochs, samples a new weight vector from the VAE and reconstructs a new TinyNN
-
+-->
 #### Training Diffusion
 This model is trained to generate neural network weights using a diffusion model that operates in the latent space of the VAE trained. The model training the following way:
 * Loads the TinnyCNN checkpoints, flattens and encodes using the VAE encoder previously trained. Produces of tensor of latent vectors
@@ -101,10 +106,7 @@ This model is trained to generate neural network weights using a diffusion model
 After training the VAE and Diffusion model, we evaluate the performance in generating NN capable of classifiying CIFAR-10 images. The evaluation has the following workflow
 * Sample a latent vector from the diffusion model
 * Decode it into a weight vector using the VAE and reconstructs a TinyNN 
-* Evaluates the TinyNN on the CIFAR-10 and it tracks the model with best accuracy
-* Repeat process several times
-* Saves the best model and accuracy distribution in a histogram. 
-* Shows confussion matrix, predictions historgram, precision by class.
+* Evaluates the generated TinyCNN on the CIFAR-10
 
 ## Experiments
 Here is a list of possible things we could explore
@@ -113,4 +115,4 @@ Here is a list of possible things we could explore
 * How do the training epochs affect the performance?
 
 ## Conclusions
-* IDK man, it is working for now...
+* It works!!!!
