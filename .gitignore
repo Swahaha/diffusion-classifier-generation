@@ -10,3 +10,10 @@ Toy_CNN/*
 models/*
 data/*
 CNN_checkpoints/*
+vae_logs_sparse/*
+latent_diffusion_logs_sparse/*
+CNN_sparse_checkpoints/*
+latent_diffusion_logs_toy/*
+sparse_model_logs/*
+vae_logs_toy/*
+toy_model_logs/*
