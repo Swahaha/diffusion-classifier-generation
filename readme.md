@@ -63,7 +63,11 @@ python evaluate_generated.py --model_path path/to/generated_model.pth
 - @rngtang -->
 
 ## Project Overview
-* Our project aims to use a combination of a VAE model and a Denoising Diffusion Probabilistic Model to generate fully trained neural networks for classifying the CIFAR-10 dataset. Instead of training the NN directly, we are generating the weights using the Diffusion model.
+Instead of training a CNN from scratch, we generate one using a VAE-Diffusion pipeline. The VAE learns to compress CNN weights into a latent space. Then, a diffusion model is trained to generate new latent vectors. When decoded, these vectors reconstruct usable CNN weights for CIFAR-10 classification. We evaluate how well these generated networks perform and how different they are from the original checkpoints.
+
+So, instead of training on CIFAR-10 data, we're training on trained CNN model weights themselves.
+
+
 
 ## Background
 * Traditionally, Diffusion models are used to generate images. But, diffusion models can be used for wide variety of applications like audio, nlp, or even Neural Networks.
