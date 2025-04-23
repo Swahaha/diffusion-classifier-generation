@@ -1,4 +1,4 @@
-# multi_run_tinycnn.py
+# The purpose of this code is to generate a dataset of TinyCNN checkpoints trained on CIFAR-10``
 
 import os
 import random
@@ -15,13 +15,11 @@ from torchvision.datasets import CIFAR10
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 
-# ──────────────────────────────────────────────────────────────────────────────
-# Config
-# ──────────────────────────────────────────────────────────────────────────────
+# ---------------------------------Parameters ---------------------------------
 NUM_RUNS        = 10
 SAVE_THRESHOLD  = 0.75      # only save epochs where val_acc > 0.75
 SAVE_TARGET     = 250       # number of saves per run
-MAX_EPOCHS      = 500       # cap on epochs (to avoid infinite loop)
+MAX_EPOCHS      = 500       # cap on epochs to avoid infinite loop
 TRAIN_BATCH     = 128
 VAL_BATCH       = 100
 INITIAL_LR      = 0.005
@@ -30,7 +28,7 @@ GAMMA           = 0.5
 CHECKPOINT_ROOT = "./CNN_checkpoints"
 os.makedirs(CHECKPOINT_ROOT, exist_ok=True)
 
-# Fixed validation transforms (no augmentation)
+# Fixed validation transforms
 transform_val = transforms.Compose([
     transforms.ToTensor(),
     transforms.Normalize((0.4914,0.4822,0.4465),
@@ -42,9 +40,7 @@ val_loader = DataLoader(val_set, batch_size=VAL_BATCH, shuffle=False, num_worker
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print("Using device:", device)
 
-# ──────────────────────────────────────────────────────────────────────────────
-# Model definition
-# ──────────────────────────────────────────────────────────────────────────────
+# ---------------------------------Model Definition ---------------------------------
 class TinyCNN(nn.Module):
     def __init__(self):
         super().__init__()
@@ -65,19 +61,14 @@ class TinyCNN(nn.Module):
     def forward(self, x):
         return self.fc(self.conv(x))
 
-# ──────────────────────────────────────────────────────────────────────────────
-# Training loop per run
-# ──────────────────────────────────────────────────────────────────────────────
+# ---------------------------------Training loop per run ---------------------------------
 for run_id in range(NUM_RUNS):
     # seed everything for reproducibility
     seed = 60 + run_id
     random.seed(seed)
     torch.manual_seed(seed)
 
-    # Build a “random flavor” of augmentations:
-    # - horizontal flip with p ∈ [0.3,0.7]
-    # - random crop padding ∈ {2,4,6}
-    # - optional ColorJitter
+    # Performs data augmentations
     flip_p = random.uniform(0, 0.4)
     pad    = random.choice([2,4,6])
     # 50% chance to include color jitter
@@ -130,7 +121,7 @@ for run_id in range(NUM_RUNS):
     for epoch in range(1, MAX_EPOCHS+1):
         epoch_start = time.time()
 
-        # --- train ---
+        # Starts training
         model.train()
         train_correct = 0
         train_total   = 0
@@ -152,7 +143,7 @@ for run_id in range(NUM_RUNS):
         train_loss /= train_total
         train_acc  = train_correct / train_total
 
-        # --- validate ---
+        # Validation
         model.eval()
         val_correct = 0
         val_total   = 0
@@ -174,7 +165,7 @@ for run_id in range(NUM_RUNS):
         # step scheduler
         scheduler.step()
 
-        # Logging
+        # Logs
         epoch_time = time.time() - epoch_start
         print(f"Run {run_id+1}/{NUM_RUNS} | Epoch {epoch:4d} "
               f"| Train Loss {train_loss:.4f}, Acc {train_acc:.4f}"
@@ -195,7 +186,7 @@ for run_id in range(NUM_RUNS):
             }, ckpt_path)
             saved_count += 1
 
-        # stop early if we've saved enough
+        # stop early if we reached 250 checkpoints saved
         if saved_count >= SAVE_TARGET:
             print(f"→ Reached {SAVE_TARGET} saves for run {run_id}, moving on.\n")
             break

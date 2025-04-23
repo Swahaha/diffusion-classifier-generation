@@ -1,3 +1,5 @@
+# Diffusion model architecture
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -112,7 +114,7 @@ class WeightDiffusion(nn.Module):
         self.norm = nn.LayerNorm(hidden_dims[-1])
         self.final = nn.Sequential(
             nn.Linear(hidden_dims[-1], weight_dim),
-            nn.Tanh()  # Constrain output range for stability
+            nn.Tanh()
         )
         
         # Initialize weights for better convergence

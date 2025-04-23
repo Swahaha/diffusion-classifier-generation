@@ -37,10 +37,6 @@ class WeightDataset(Dataset):
         return flattened
 
 def cosine_beta_schedule(timesteps, s=0.008):
-    """
-    Cosine schedule as proposed in https://arxiv.org/abs/2102.09672
-    Better for weight generation as it's smoother
-    """
     steps = timesteps + 1
     x = torch.linspace(0, timesteps, steps)
     alphas_cumprod = torch.cos(((x / timesteps) + s) / (1 + s) * torch.pi * 0.5) ** 2
@@ -141,7 +137,7 @@ class DiffusionTrainer:
         best_loss = float('inf')
         best_epoch = -1
         no_improvement_count = 0
-        patience = 30  # Early stopping patience
+        patience = 30 
         
         for epoch in range(epochs):
             epoch_start_time = datetime.now()

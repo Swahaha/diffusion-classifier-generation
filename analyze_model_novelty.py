@@ -1,3 +1,5 @@
+# The purpose of this code is to analyze the novelty of a generated model compared to a training dataset
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -19,7 +21,6 @@ from vae_model import WeightVAE, weights_to_model
 from vae_diffusion import LatentDiffusion, LatentDiffusionTrainer
 
 def load_cifar10(batch_size=128, train=True):
-    """Load CIFAR10 dataset with normalization"""
     transform = transforms.Compose([
         transforms.ToTensor(),
         transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
@@ -32,7 +33,6 @@ def load_cifar10(batch_size=128, train=True):
     return dataloader, dataset.classes
 
 def extract_model_features(model, dataloader, device):
-    """Extract features from a model's predictions"""
     model.eval()
     all_features = []
     
@@ -45,7 +45,6 @@ def extract_model_features(model, dataloader, device):
     return np.concatenate(all_features, axis=0)
 
 def compute_similarity_metrics(train_features, generated_features):
-    """Compute various similarity metrics between training and generated features"""
     metrics = {}
     
     # Cosine similarity between feature distributions
@@ -70,27 +69,21 @@ def compute_similarity_metrics(train_features, generated_features):
     return metrics
 
 def load_model_safely(checkpoint_path, device):
-    """Load model checkpoint safely, handling different checkpoint formats"""
     print(f"Loading checkpoint: {checkpoint_path}")
     checkpoint = torch.load(checkpoint_path, map_location=device)
     
-    # If checkpoint is a dictionary with 'state_dict' key, extract it
     if isinstance(checkpoint, dict):
         if 'state_dict' in checkpoint:
             return checkpoint['state_dict']
-        # If no state_dict key but contains model keys, return as is
         if any(k.endswith(('.weight', '.bias')) for k in checkpoint.keys()):
             return checkpoint
     return checkpoint
 
 def get_epoch_from_checkpoint(checkpoint_path):
-    """Extract epoch number from checkpoint filename"""
     try:
-        # Assuming format like "save003_epoch0025.pth" or similar
         epoch = int(''.join(filter(str.isdigit, checkpoint_path.split('epoch')[-1])))
         return epoch
     except:
-        # If can't extract epoch, use the full filename for sorting
         return checkpoint_path
 
 def analyze_generated_models(args):
@@ -162,7 +155,7 @@ def analyze_generated_models(args):
         print("Extracting features from generated model...")
         generated_features = extract_model_features(generated_model, trainloader, device)
         
-        # Randomly select 10 checkpoints (ensuring they're spread across training)
+        # Randomly select 10 checkpoints from dataset
         num_checkpoints = len(all_checkpoints)
         checkpoint_indices = np.linspace(0, num_checkpoints-1, 10, dtype=int)
         selected_checkpoints = [all_checkpoints[i] for i in checkpoint_indices]

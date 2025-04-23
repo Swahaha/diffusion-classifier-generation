@@ -1,11 +1,10 @@
-#!/usr/bin/env python3
 # Check the sparsity of a checkpoint with the same format
 
 import torch
 import numpy as np
 import os
 import argparse
-from diffusion_model import TinyCNN  # Import TinyCNN from the repository
+from diffusion_model import TinyCNN
 
 def load_model_safely(model_path, device):
     """Load model with fallback options for PyTorch compatibility"""
@@ -16,13 +15,11 @@ def load_model_safely(model_path, device):
     except Exception as e:
         print(f"Failed to load with default settings: {e}")
         try:
-            # Try with weights_only=False for PyTorch 2.6+ compatibility
             print("Attempting to load with weights_only=False...")
             checkpoint = torch.load(model_path, map_location=device, weights_only=False)
             return checkpoint
         except Exception as e2:
             print(f"Failed to load with weights_only=False: {e2}")
-            # Try the most permissive method
             print("Attempting to load with pickle module directly...")
             import pickle
             with open(model_path, 'rb') as f:
@@ -55,7 +52,7 @@ def analyze_checkpoint(checkpoint_path):
     # Analyze sparsity
     print("\nAnalyzing sparsity:")
     
-    # Try to load into TinyCNN model
+    # Try to load the TinyCNN model
     try:
         model = TinyCNN().to(device)
         

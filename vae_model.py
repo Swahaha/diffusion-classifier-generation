@@ -53,29 +53,24 @@ class WeightVAE(nn.Module):
         return x_recon, mu, log_var
     
     def sample(self, num_samples=1, device="cuda"):
-        """Generate sample weight vectors from random latent vectors"""
         z = torch.randn(num_samples, self.latent_dim).to(device)
         samples = self.decode(z)
         return samples
     
     def loss_function(self, recon_x, x, mu, log_var, kld_weight=0.001):
-        """VAE loss function: reconstruction + KL divergence losses"""
         recon_loss = F.mse_loss(recon_x, x, reduction='sum')
         
-        # KL divergence: -0.5 * sum(1 + log(sigma^2) - mu^2 - sigma^2)
         kld_loss = -0.5 * torch.sum(1 + log_var - mu.pow(2) - log_var.exp())
         
         return recon_loss + kld_weight * kld_loss, recon_loss, kld_loss
     
 def flatten_weights(model):
-    """Flatten model weights into a single vector"""
     params = []
     for param in model.parameters():
         params.append(param.data.view(-1))
     return torch.cat(params)
 
 def weights_to_model(weight_vector, model_class=TinyCNN):
-    """Reconstruct a model from a flattened weight vector"""
     model = model_class()
     start_idx = 0
     

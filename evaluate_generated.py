@@ -1,3 +1,5 @@
+# Evaluate the generated model
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -60,7 +62,6 @@ def sample_timestep(model, x, t, betas, sqrt_one_minus_alphas_cumprod, sqrt_reci
         return pred_original
 
 def cosine_beta_schedule(timesteps, s=0.008):
-    """Cosine schedule as proposed in https://arxiv.org/abs/2102.09672"""
     steps = timesteps + 1
     x = torch.linspace(0, timesteps, steps)
     alphas_cumprod = torch.cos(((x / timesteps) + s) / (1 + s) * torch.pi * 0.5) ** 2
@@ -69,20 +70,17 @@ def cosine_beta_schedule(timesteps, s=0.008):
     return torch.clip(betas, 0.0001, 0.02)
 
 def linear_beta_schedule(timesteps):
-    """Linear beta schedule"""
     beta_start = 0.0001
     beta_end = 0.02
     return torch.linspace(beta_start, beta_end, timesteps)
 
 def sample_weights(model, timesteps, weight_shape, device="cuda", beta_schedule="cosine"):
-    """Generate a new set of weights using the diffusion model"""
     # Start from random noise
     x = torch.randn(weight_shape).to(device)
     
-    # Parameters for reverse process
     if beta_schedule == "linear":
         betas = linear_beta_schedule(timesteps).to(device)
-    else:  # default to cosine
+    else: 
         betas = cosine_beta_schedule(timesteps).to(device)
         
     alphas = 1. - betas
@@ -102,7 +100,6 @@ def sample_weights(model, timesteps, weight_shape, device="cuda", beta_schedule=
     return x
 
 def reconstruct_model(weight_vector, model_class=TinyCNN):
-    """Reconstruct a model from a flattened weight vector"""
     # Create a new model instance
     model = model_class()
     

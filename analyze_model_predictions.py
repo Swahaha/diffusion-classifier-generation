@@ -1,3 +1,6 @@
+# The purpose of this code is to analyze the predictions of two TinyCNN models, 
+# one of them is a generated model and the other is a randomly selected checkpoint from a trained model
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -13,27 +16,21 @@ import seaborn as sns
 from scipy.stats import gaussian_kde
 
 def load_model_safely(checkpoint_path, device):
-    """Load model checkpoint safely, handling different checkpoint formats"""
     print(f"Loading checkpoint: {checkpoint_path}")
     try:
-        # First try loading with weights_only=True (new default in PyTorch 2.6)
         checkpoint = torch.load(checkpoint_path, map_location=device, weights_only=True)
     except Exception as e:
         print("Weights-only loading failed, attempting legacy loading...")
-        # If that fails, try with weights_only=False (legacy mode)
         checkpoint = torch.load(checkpoint_path, map_location=device, weights_only=False)
     
-    # If checkpoint is a dictionary with 'state_dict' key, extract it
     if isinstance(checkpoint, dict):
         if 'state_dict' in checkpoint:
             return checkpoint['state_dict']
-        # If no state_dict key but contains model keys, return as is
         if any(k.endswith(('.weight', '.bias')) for k in checkpoint.keys()):
             return checkpoint
     return checkpoint
 
 def get_random_checkpoint(checkpoint_dir="CNN_checkpoints/run_1"):
-    """Get a random checkpoint from the specified directory"""
     checkpoints = glob.glob(os.path.join(checkpoint_dir, "*.pth"))
     if not checkpoints:
         raise ValueError(f"No checkpoints found in {checkpoint_dir}")
@@ -53,12 +50,12 @@ def analyze_models(args):
                              download=True, transform=transform)
     classes = dataset.classes
     
-    # Load model 1 (specified model)
+    # Load the generated model
     model1 = TinyCNN().to(device)
     model1.load_state_dict(load_model_safely(args.model1, device))
     model1.eval()
     
-    # Load model 2 (random checkpoint)
+    # Load random model from the training set
     model2_path = get_random_checkpoint()
     print(f"Randomly selected checkpoint for model 2: {model2_path}")
     model2 = TinyCNN().to(device)
@@ -107,7 +104,7 @@ def analyze_models(args):
     output_dir = "analysis_2_models"
     os.makedirs(output_dir, exist_ok=True)
     
-    # 1. Class Distribution Plot
+    # Class Distribution
     plt.figure(figsize=(12, 6))
     x = np.arange(10)
     width = 0.35
@@ -130,7 +127,7 @@ def analyze_models(args):
     plt.close()
     print(f"Class distribution plot saved to {class_dist_path}")
     
-    # 2. Confidence Distribution Plot
+    # Confidence Distribution 
     plt.figure(figsize=(12, 6))
     confidences1 = np.max(all_probs1, axis=1)
     confidences2 = np.max(all_probs2, axis=1)
@@ -154,7 +151,7 @@ def analyze_models(args):
     plt.close()
     print(f"Confidence distribution plot saved to {conf_dist_path}")
     
-    # 3. Class-wise Confidence Plot
+    # Class-wise Confidence
     plt.figure(figsize=(12, 6))
     x = np.arange(10)
     width = 0.35

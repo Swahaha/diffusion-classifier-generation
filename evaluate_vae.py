@@ -1,3 +1,5 @@
+# The purpose of this code is to evaluate the performance of a VAE on a dataset of TinyCNN checkpoints
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -16,7 +18,6 @@ from diffusion_model import TinyCNN
 from vae_model import WeightVAE, weights_to_model
 
 def load_cifar10(batch_size=128):
-    """Load CIFAR10 test dataset with normalization"""
     transform = transforms.Compose([
         transforms.ToTensor(),
         transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
@@ -29,7 +30,6 @@ def load_cifar10(batch_size=128):
     return testloader, testset.classes
 
 def evaluate_model(model, testloader, device):
-    """Evaluate model on test set and return predictions and ground truth"""
     model.eval()
     all_preds = []
     all_labels = []
@@ -51,7 +51,6 @@ def evaluate_model(model, testloader, device):
     return accuracy, all_preds, all_labels, all_probs
 
 def plot_results(all_preds, all_labels, class_names, output_dir):
-    """Create visualizations of the model performance"""
     os.makedirs(output_dir, exist_ok=True)
     
     # Confusion matrix

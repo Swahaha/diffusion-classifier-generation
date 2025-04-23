@@ -1,3 +1,5 @@
+# The purpose of this code is to train a VAE on a dataset of TinyCNN checkpoints
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -79,9 +81,7 @@ def train_vae(args):
     optimizer = optim.Adam(vae.parameters(), lr=args.learning_rate)
     
     # Learning rate scheduler
-    scheduler = optim.lr_scheduler.StepLR(optimizer, 
-                                         step_size=args.lr_decay_epochs, 
-                                         gamma=args.lr_decay_factor)
+    scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=args.lr_decay_epochs, gamma=args.lr_decay_factor)
     
     # Create log directory
     log_dir = f"vae_logs_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
@@ -91,6 +91,7 @@ def train_vae(args):
     best_loss = float('inf')
     
     for epoch in range(args.epochs):
+        # Starts training
         vae.train()
         train_loss = 0
         recon_loss_total = 0

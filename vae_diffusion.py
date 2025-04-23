@@ -1,3 +1,5 @@
+# The purpose of this code is to train a latent diffusion model on a dataset of TinyCNN checkpoints and previously trained VAE latent vectors
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -14,8 +16,8 @@ import matplotlib.pyplot as plt
 from diffusion_model import TinyCNN
 from vae_model import WeightVAE, weights_to_model
 
+# ---------------------------------Latent Diffusion Model ---------------------------------
 class LatentDiffusion(nn.Module):
-    """Diffusion model that operates in the latent space of a VAE"""
     def __init__(self, latent_dim, time_emb_dim=64, hidden_dims=[128, 128]):
         super().__init__()
         
@@ -40,7 +42,6 @@ class LatentDiffusion(nn.Module):
         self.final = nn.Linear(hidden_dims[-1], latent_dim)
         
     def forward(self, x, t):
-        """Predict noise given noisy latent vectors and timesteps"""
         # Time embeddings
         t_emb = self.time_mlp(t)
         
@@ -52,7 +53,6 @@ class LatentDiffusion(nn.Module):
         return self.final(h)
     
 class SinusoidalPositionEmbeddings(nn.Module):
-    """Time embedding using sinusoidal positional embeddings"""
     def __init__(self, dim):
         super().__init__()
         self.dim = dim
@@ -67,7 +67,6 @@ class SinusoidalPositionEmbeddings(nn.Module):
         return embeddings
 
 class DiffusionBlock(nn.Module):
-    """Single block in the diffusion model"""
     def __init__(self, in_dim, out_dim, time_dim):
         super().__init__()
         self.time_mlp = nn.Sequential(
@@ -88,7 +87,6 @@ class DiffusionBlock(nn.Module):
         return h + time_emb
 
 class LatentDiffusionTrainer:
-    """Trainer for the latent diffusion model"""
     def __init__(self, vae, diffusion_model, timesteps=1000, beta_schedule='cosine'):
         self.vae = vae
         self.model = diffusion_model
@@ -115,7 +113,6 @@ class LatentDiffusionTrainer:
         self.posterior_variance = self.betas * (1. - self.alphas_cumprod_prev) / (1. - self.alphas_cumprod)
     
     def _cosine_beta_schedule(self, timesteps, s=0.008):
-        """Cosine beta schedule as in improved DDPM paper"""
         steps = timesteps + 1
         x = torch.linspace(0, timesteps, steps)
         alphas_cumprod = torch.cos(((x / timesteps) + s) / (1 + s) * torch.pi * 0.5) ** 2
@@ -124,42 +121,33 @@ class LatentDiffusionTrainer:
         return torch.clip(betas, 0.0001, 0.02)
     
     def _linear_beta_schedule(self, timesteps):
-        """Linear beta schedule"""
         beta_start = 0.0001
         beta_end = 0.02
         return torch.linspace(beta_start, beta_end, timesteps)
         
     def q_sample(self, x_start, t, noise=None):
-        """Forward diffusion process: add noise to a sample"""
         if noise is None:
             noise = torch.randn_like(x_start)
             
-        # Extract the appropriate alpha values for this timestep
         sqrt_alphas_cumprod_t = extract(self.sqrt_alphas_cumprod, t, x_start.shape)
         sqrt_one_minus_alphas_cumprod_t = extract(self.sqrt_one_minus_alphas_cumprod, t, x_start.shape)
         
-        # Add noise according to diffusion equation
         return sqrt_alphas_cumprod_t * x_start + sqrt_one_minus_alphas_cumprod_t * noise
     
     def p_losses(self, x_start, t, noise=None):
-        """Calculate loss for denoising diffusion"""
         if noise is None:
             noise = torch.randn_like(x_start)
             
-        # Add noise to get x_t
         x_noisy = self.q_sample(x_start, t, noise)
         
-        # Predict the noise
         predicted_noise = self.model(x_noisy, t)
         
-        # Calculate loss (mean squared error between true and predicted noise)
         loss = F.mse_loss(noise, predicted_noise)
         
         return loss
 
     def train(self, latent_vectors, batch_size=32, epochs=100, lr=1e-4, device="cuda", 
              lr_decay_epochs=200, lr_decay_factor=0.5):
-        """Train the diffusion model on VAE latent vectors"""
         # Create data loader from latent vectors
         dataset = torch.utils.data.TensorDataset(latent_vectors)
         dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
@@ -223,7 +211,7 @@ class LatentDiffusionTrainer:
                     'loss': avg_loss,
                     'timesteps': self.timesteps,
                     'beta_schedule': self.beta_schedule_type,
-                    'latent_dim': self.model.final.out_features  # Save latent dimension for later use
+                    'latent_dim': self.model.final.out_features 
                 }, checkpoint_path)
                 print(f"New best model saved to {checkpoint_path}")
                 
@@ -256,7 +244,6 @@ class LatentDiffusionTrainer:
     
     @torch.no_grad()
     def p_sample(self, x, t, t_index):
-        """Sample from the model at a specific timestep"""
         betas_t = extract(self.betas, t, x.shape)
         sqrt_one_minus_alphas_cumprod_t = extract(self.sqrt_one_minus_alphas_cumprod, t, x.shape)
         sqrt_recip_alphas_t = extract(self.sqrt_recip_alphas, t, x.shape)
@@ -277,9 +264,7 @@ class LatentDiffusionTrainer:
     
     @torch.no_grad()
     def p_sample_loop(self, shape, device):
-        """Generate samples by iteratively denoising from pure noise"""
         b = shape[0]
-        # start from pure noise
         img = torch.randn(shape, device=device)
         
         for i in tqdm(reversed(range(0, self.timesteps)), desc='sampling loop time step'):
@@ -289,13 +274,11 @@ class LatentDiffusionTrainer:
         return img
 
 def extract(a, t, x_shape):
-    """Extract specific timestep values from a tensor and reshape to match x_shape"""
     batch_size = t.shape[0]
     out = a.gather(-1, t.cpu())
     return out.reshape(batch_size, *((1,) * (len(x_shape) - 1))).to(t.device)
 
 def process_checkpoints_with_vae(vae_path, checkpoint_dir, device):
-    """Process TinyCNN checkpoints through a VAE to get latent vectors"""
     # Load the VAE
     vae_checkpoint = torch.load(vae_path, map_location=device)
     
@@ -349,6 +332,7 @@ def process_checkpoints_with_vae(vae_path, checkpoint_dir, device):
     return latent_vectors
 
 def main(args):
+    # Set device
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Using device: {device}")
     
@@ -378,7 +362,7 @@ def main(args):
     print(f"Generated {latent_vectors.shape[0]} latent vectors with dimension {latent_vectors.shape[1]}")
     
     # Initialize the latent diffusion model
-    hidden_dims = [256, 256, 256]  # Can be adjusted for more capacity
+    hidden_dims = [256, 256, 256]
     diffusion_model = LatentDiffusion(
         latent_dim=latent_dim,
         time_emb_dim=128,

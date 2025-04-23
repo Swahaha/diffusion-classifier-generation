@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# finetune_tiny_cnn.py
 # Script to finetune a TinyCNN checkpoint on CIFAR-10 for 5 epochs
 
 import os

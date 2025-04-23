@@ -1,5 +1,3 @@
-# multi_run_tinycnn.py
-
 # This script generates a dataset of images from a diffusion model.
 # It uses the CIFAR-10 dataset and a TinyCNN model.
 # Generating the dataset for the Experiment seciton
@@ -19,13 +17,11 @@ from torchvision.datasets import CIFAR10
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 
-# ──────────────────────────────────────────────────────────────────────────────
-# Config
-# ──────────────────────────────────────────────────────────────────────────────
+# --------------------------------------------------Config--------------------------------------------------
 NUM_RUNS        = 2
 SAVE_THRESHOLD  = 0.75      # only save epochs where val_acc > 0.75
 SAVE_TARGET     = 250       # number of saves per run
-MAX_EPOCHS      = 500       # cap on epochs (to avoid infinite loop)
+MAX_EPOCHS      = 500       # cap on epochs to avoid infinite loop
 TRAIN_BATCH     = 128
 VAL_BATCH       = 100
 INITIAL_LR      = 0.005
@@ -39,24 +35,19 @@ MIN_SPARSITY = 0.0  # Minimum sparsity level (0% pruning)
 MAX_SPARSITY = 0.7  # Maximum sparsity level (70% pruning)
 
 def apply_sparsity(model, sparsity_level):
-    """Apply sparsity to model weights by pruning the smallest weights"""
     with torch.no_grad():
         for name, param in model.named_parameters():
-            if 'weight' in name and len(param.shape) > 1:  # Only prune weight matrices
-                # Calculate number of weights to prune
+            if 'weight' in name and len(param.shape) > 1: 
                 num_weights = param.numel()
                 num_prune = int(num_weights * sparsity_level)
                 
                 if num_prune > 0:
-                    # Get absolute values and find threshold
                     abs_weights = torch.abs(param)
                     threshold = torch.topk(abs_weights.flatten(), num_prune, largest=False)[0][-1]
                     
-                    # Create mask and apply
                     mask = abs_weights > threshold
                     param.data *= mask.float()
 
-# Fixed validation transforms (no augmentation)
 transform_val = transforms.Compose([
     transforms.ToTensor(),
     transforms.Normalize((0.4914,0.4822,0.4465),
@@ -68,9 +59,7 @@ val_loader = DataLoader(val_set, batch_size=VAL_BATCH, shuffle=False, num_worker
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print("Using device:", device)
 
-# ──────────────────────────────────────────────────────────────────────────────
-# Model definition
-# ──────────────────────────────────────────────────────────────────────────────
+# --------------------------------------------------Model definition--------------------------------------------------
 class TinyCNN(nn.Module):
     def __init__(self):
         super().__init__()
@@ -91,20 +80,14 @@ class TinyCNN(nn.Module):
     def forward(self, x):
         return self.fc(self.conv(x))
 
-# ──────────────────────────────────────────────────────────────────────────────
-# Training loop per run
-# ──────────────────────────────────────────────────────────────────────────────
+# --------------------------------------------------Training loop--------------------------------------------------
 for run_id in range(NUM_RUNS):
     # seed everything for reproducibility
     seed = 55 + run_id
     random.seed(seed)
     torch.manual_seed(seed)
 
-    # Build a "random flavor" of augmentations:
-    # - horizontal flip with p ∈ [0.3,0.7]
-    # - random crop padding ∈ {2,4,6}
-    # - optional ColorJitter
-    # - random sparsity level
+    # Random augmentations
     flip_p = random.uniform(0, 0.4)
     pad    = random.choice([2,4,6])
     sparsity = random.uniform(MIN_SPARSITY, MAX_SPARSITY)

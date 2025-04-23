@@ -1,3 +1,6 @@
+# The purpose of this code is to compare the predictions of two TinyCNN models, 
+# one of them is a generated model and the other is a randomly selected checkpoint from a trained model
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -11,34 +14,27 @@ import random
 from diffusion_model import TinyCNN
 
 def load_model_safely(checkpoint_path, device):
-    """Load model checkpoint safely, handling different checkpoint formats"""
     print(f"Loading checkpoint: {checkpoint_path}")
     try:
-        # First try loading with weights_only=True (new default in PyTorch 2.6)
         checkpoint = torch.load(checkpoint_path, map_location=device, weights_only=True)
     except Exception as e:
         print("Weights-only loading failed, attempting legacy loading...")
-        # If that fails, try with weights_only=False (legacy mode)
         checkpoint = torch.load(checkpoint_path, map_location=device, weights_only=False)
     
-    # If checkpoint is a dictionary with 'state_dict' key, extract it
     if isinstance(checkpoint, dict):
         if 'state_dict' in checkpoint:
             return checkpoint['state_dict']
-        # If no state_dict key but contains model keys, return as is
         if any(k.endswith(('.weight', '.bias')) for k in checkpoint.keys()):
             return checkpoint
     return checkpoint
 
 def get_random_checkpoint(checkpoint_dir="CNN_checkpoints/run_1"):
-    """Get a random checkpoint from the specified directory"""
     checkpoints = glob.glob(os.path.join(checkpoint_dir, "*.pth"))
     if not checkpoints:
         raise ValueError(f"No checkpoints found in {checkpoint_dir}")
     return random.choice(checkpoints)
 
 def get_one_image_per_class(dataset):
-    """Get one image for each class from the dataset"""
     class_images = {}
     class_indices = {}
     
@@ -55,14 +51,12 @@ def get_one_image_per_class(dataset):
     return sorted_images, sorted_indices
 
 def denormalize_image(image):
-    """Convert normalized tensor image back to displayable format"""
     image = image.clone()
     image = image * torch.tensor([0.5, 0.5, 0.5]).view(3, 1, 1)
     image = image + torch.tensor([0.5, 0.5, 0.5]).view(3, 1, 1)
     return image.permute(1, 2, 0).numpy()
 
 def get_prediction_text(probs, classes, label):
-    """Format prediction text with class name and confidence"""
     pred_class = torch.argmax(probs).item()
     confidence = probs[pred_class].item() * 100
     text = f"{classes[pred_class]}\n{confidence:.1f}%"
@@ -85,13 +79,13 @@ def compare_models(args):
     
     # Get one image per class
     images, indices = get_one_image_per_class(dataset)
-    
-    # Load model 1 (specified model)
+        
+        # Load model 1 (specified model)
     model1 = TinyCNN().to(device)
     model1.load_state_dict(load_model_safely(args.model1, device))
     model1.eval()
     
-    # Load model 2 (random checkpoint)
+    # Load random model from the training set
     model2_path = get_random_checkpoint()
     print(f"Randomly selected checkpoint for model 2: {model2_path}")
     model2 = TinyCNN().to(device)
@@ -101,16 +95,14 @@ def compare_models(args):
     # Create figure
     fig = plt.figure(figsize=(7, 10))
     
-    # Create a 10x1 grid of subplots with adjusted width ratios
-    # Make side columns very narrow and eliminate spacing
     gs = plt.GridSpec(5, 3, width_ratios=[1, 1, 1])
-    gs.update(wspace=0.0, hspace=0.5)  # Remove horizontal spacing completely
+    gs.update(wspace=0.0, hspace=0.5) 
     
     # Process each image
     with torch.no_grad():
         for i in range(5):
             image = images[i+2]
-            label = i+2  # Since we sorted by class
+            label = i+2 
             
             # Get predictions
             image_tensor = image.unsqueeze(0).to(device)
@@ -120,7 +112,7 @@ def compare_models(args):
             # Model 1 predictions (left)
             ax_left = plt.subplot(gs[i, 0])
             text1, color1 = get_prediction_text(probs1, classes, label)
-            # Position text at the very right edge
+            
             ax_left.text(1.05, 0.5, text1,
                         horizontalalignment='right',
                         verticalalignment='center',
@@ -138,7 +130,6 @@ def compare_models(args):
             # Model 2 predictions (right)
             ax_right = plt.subplot(gs[i, 2])
             text2, color2 = get_prediction_text(probs2, classes, label)
-            # Position text at the very left edge
             ax_right.text(-0.05, 0.5, text2,
                          horizontalalignment='left',
                          verticalalignment='center',
@@ -147,7 +138,7 @@ def compare_models(args):
                          transform=ax_right.transAxes)
             ax_right.axis('off')
     
-    # Add model names as column headers with adjusted positions
+    # Add model names as column headers
     fig.text(0.40, 0.87, "Generated Model", 
              ha='right', va='bottom')
     fig.text(0.60, 0.87, f"Sample from Training Set", 

@@ -1,3 +1,5 @@
+# The purpose of this code is to analyze the performance of a generated model on the CIFAR-10 dataset
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -13,7 +15,6 @@ import os
 from sklearn.metrics import confusion_matrix, classification_report
 
 def load_cifar10(batch_size=128):
-    """Load CIFAR10 test dataset with normalization"""
     transform = transforms.Compose([
         transforms.ToTensor(),
         transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
@@ -26,7 +27,6 @@ def load_cifar10(batch_size=128):
     return testloader, testset.classes
 
 def evaluate_model(model, testloader, device):
-    """Evaluate model on test set and return predictions and true labels"""
     model.eval()
     all_preds = []
     all_labels = []
@@ -47,7 +47,6 @@ def evaluate_model(model, testloader, device):
     return accuracy, all_preds, all_labels, all_probs
 
 def plot_confusion_matrix(y_true, y_pred, class_names, output_dir='.'):
-    """Plot confusion matrix"""
     cm = confusion_matrix(y_true, y_pred)
     plt.figure(figsize=(10, 8))
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=class_names, yticklabels=class_names)
@@ -58,7 +57,6 @@ def plot_confusion_matrix(y_true, y_pred, class_names, output_dir='.'):
     plt.close()
 
 def plot_class_distribution(y_true, y_pred, class_names, output_dir='.'):
-    """Plot distribution of true vs predicted classes"""
     true_counts = np.bincount(y_true, minlength=len(class_names))
     pred_counts = np.bincount(y_pred, minlength=len(class_names))
     
@@ -78,7 +76,6 @@ def plot_class_distribution(y_true, y_pred, class_names, output_dir='.'):
     return df
 
 def plot_prediction_confidence(all_probs, all_preds, all_labels, class_names, output_dir='.'):
-    """Plot prediction confidence for correct and incorrect predictions"""
     all_probs = np.array(all_probs)
     all_preds = np.array(all_preds)
     all_labels = np.array(all_labels)
@@ -122,21 +119,17 @@ def plot_prediction_confidence(all_probs, all_preds, all_labels, class_names, ou
     plt.close()
 
 def load_model_safely(model_path, device):
-    """Load model with fallback options for PyTorch compatibility"""
     try:
-        # First try with default settings
         checkpoint = torch.load(model_path, map_location=device)
         return checkpoint
     except Exception as e:
         print(f"Failed to load with default settings: {e}")
         try:
-            # Try with weights_only=False for PyTorch 2.6+ compatibility
             print("Attempting to load with weights_only=False...")
             checkpoint = torch.load(model_path, map_location=device, weights_only=False)
             return checkpoint
         except Exception as e2:
             print(f"Failed to load with weights_only=False: {e2}")
-            # Try the most permissive method
             print("Attempting to load with pickle module directly...")
             import pickle
             with open(model_path, 'rb') as f:

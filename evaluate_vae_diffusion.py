@@ -1,3 +1,5 @@
+# The purpose of this code is to evaluate the performance of a VAE+Diffusion to generated models
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -17,7 +19,6 @@ from vae_model import WeightVAE, weights_to_model
 from vae_diffusion import LatentDiffusion, LatentDiffusionTrainer, extract
 
 def load_cifar10(batch_size=128):
-    """Load CIFAR10 test dataset with normalization"""
     transform = transforms.Compose([
         transforms.ToTensor(),
         transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
@@ -30,7 +31,6 @@ def load_cifar10(batch_size=128):
     return testloader, testset.classes
 
 def evaluate_model(model, testloader, device):
-    """Evaluate model on test set and return predictions and ground truth"""
     model.eval()
     all_preds = []
     all_labels = []
@@ -52,7 +52,6 @@ def evaluate_model(model, testloader, device):
     return accuracy, all_preds, all_labels, all_probs
 
 def plot_results(all_preds, all_labels, class_names, output_dir):
-    """Create visualizations of the model performance"""
     os.makedirs(output_dir, exist_ok=True)
     
     # Confusion matrix
@@ -162,6 +161,7 @@ def sample_and_evaluate(args):
     output_dir = os.path.join(os.path.dirname(diffusion_checkpoint_path), "evaluation_results")
     os.makedirs(output_dir, exist_ok=True)
     
+    # Generate and evaluate models 
     for i in range(args.num_samples):
         print(f"\nSample {i+1}/{args.num_samples}")
         
@@ -204,14 +204,14 @@ def sample_and_evaluate(args):
             
             print(f"New best model! Accuracy: {best_accuracy:.2f}%")
     
-    # Some filtering
+    # Remove the worst 40 models
     sorted_list = sorted(all_accuracies)
     elements_to_remove = sorted_list[0:40:2]
     for elem in elements_to_remove:
         all_accuracies.remove(elem)
     
 
-    # Visualize the distribution of accuracies
+    # Distribution of accuracies
     plt.figure(figsize=(10, 6))
     plt.hist(all_accuracies, bins=20, alpha=0.7)
     plt.axvline(best_accuracy, color='r', linestyle='--', label=f'Best Accuracy: {best_accuracy:.2f}%')
@@ -223,7 +223,7 @@ def sample_and_evaluate(args):
     plt.savefig(os.path.join(output_dir, "accuracy_distribution.png"))
     plt.close()
     
-    # Print overall statistics
+    # Statistics
     print("\n=== Overall Statistics ===")
     print(f"Number of samples: {args.num_samples}")
     print(f"Average accuracy: {np.mean(all_accuracies):.2f}%")
@@ -232,7 +232,7 @@ def sample_and_evaluate(args):
     print(f"Max accuracy: {np.max(all_accuracies):.2f}%")
     print(f"Std dev: {np.std(all_accuracies):.2f}%")
     
-    # Plot detailed results for the best model
+    # Best model statistics
     if best_model is not None:
         print(f"\n=== Best Model (Sample {best_sample_idx+1}) ===")
         print(f"Accuracy: {best_accuracy:.2f}%")
