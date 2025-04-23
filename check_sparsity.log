@@ -1,0 +1,30 @@
+nohup: ignoring input
+Using device: cuda
+Loading checkpoint from: 4_run0_save056_epoch0106.pth
+
+Checkpoint keys:
+- epoch
+- state_dict
+- val_acc
+
+State dict keys:
+- conv.0.weight
+- conv.0.bias
+- conv.3.weight
+- conv.3.bias
+- fc.1.weight
+- fc.1.bias
+- fc.3.weight
+- fc.3.bias
+
+Analyzing sparsity:
+conv.0.weight: shape=torch.Size([16, 3, 3, 3]), size=432, zeros=0, sparsity=0.00%
+conv.0.bias: shape=torch.Size([16]), size=16, zeros=0, sparsity=0.00%
+conv.3.weight: shape=torch.Size([32, 16, 3, 3]), size=4608, zeros=0, sparsity=0.00%
+conv.3.bias: shape=torch.Size([32]), size=32, zeros=0, sparsity=0.00%
+fc.1.weight: shape=torch.Size([100, 2048]), size=204800, zeros=0, sparsity=0.00%
+fc.1.bias: shape=torch.Size([100]), size=100, zeros=0, sparsity=0.00%
+fc.3.weight: shape=torch.Size([10, 100]), size=1000, zeros=0, sparsity=0.00%
+fc.3.bias: shape=torch.Size([10]), size=10, zeros=0, sparsity=0.00%
+
+Overall sparsity: 0.00% (0/210998 parameters are zero)

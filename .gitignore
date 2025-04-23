@@ -1,4 +1,4 @@
-__pycache__/
+__pycache__/*
 latent_diffusion_fulldataset/*
 latent_diffusion_logs_20250420_230335/*
 latent_diffusion_logs_20250420_231141/*
@@ -17,3 +17,6 @@ latent_diffusion_logs_toy/*
 sparse_model_logs/*
 vae_logs_toy/*
 toy_model_logs/*
+*.pth
+latent_diffusion_logs_toy2/*
+

@@ -1,0 +1,20 @@
+nohup: ignoring input
+Using device: cuda
+Loading checkpoint: latent_diffusion_fulldataset/evaluation_results/best_model.pth
+Weights-only loading failed, attempting legacy loading...
+Randomly selected checkpoint for model 2: CNN_checkpoints/run_1/2_run1_save032_epoch0086.pth
+Loading checkpoint: CNN_checkpoints/run_1/2_run1_save032_epoch0086.pth
+Class distribution plot saved to analysis_2_models/class_distribution.png
+Confidence distribution plot saved to analysis_2_models/confidence_distribution.png
+Class-wise confidence plot saved to analysis_2_models/class_confidence.png
+
+Model Statistics:
+Model 1 (best_model.pth):
+Accuracy: 72.50%
+Average Confidence: 75.64%
+Confidence Std: 21.05%
+
+Model 2 (2_run1_save032_epoch0086.pth):
+Accuracy: 66.40%
+Average Confidence: 61.53%
+Confidence Std: 21.34%

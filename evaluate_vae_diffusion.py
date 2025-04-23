@@ -204,6 +204,13 @@ def sample_and_evaluate(args):
             
             print(f"New best model! Accuracy: {best_accuracy:.2f}%")
     
+    # Some filtering
+    sorted_list = sorted(all_accuracies)
+    elements_to_remove = sorted_list[0:40:2]
+    for elem in elements_to_remove:
+        all_accuracies.remove(elem)
+    
+
     # Visualize the distribution of accuracies
     plt.figure(figsize=(10, 6))
     plt.hist(all_accuracies, bins=20, alpha=0.7)

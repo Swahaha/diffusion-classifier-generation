@@ -113,9 +113,9 @@ def analyze_models(args):
     width = 0.35
     
     plt.bar(x - width/2, np.bincount(all_preds1, minlength=10), width, 
-            label=f"Model 1: {os.path.basename(args.model1)}", alpha=0.7)
+            label=f"Generated Model", alpha=0.7)
     plt.bar(x + width/2, np.bincount(all_preds2, minlength=10), width, 
-            label=f"Model 2: {os.path.basename(model2_path)}", alpha=0.7)
+            label=f"Training Set", alpha=0.7)
     
     plt.title("Class Distribution Comparison")
     plt.xlabel("Class")
@@ -136,10 +136,10 @@ def analyze_models(args):
     confidences2 = np.max(all_probs2, axis=1)
     
     sns.histplot(confidences1, bins=20, kde=True, 
-                label=f"Model 1: {os.path.basename(args.model1)}", 
+                label=f"Generated Model", 
                 alpha=0.5, color='blue')
     sns.histplot(confidences2, bins=20, kde=True, 
-                label=f"Model 2: {os.path.basename(model2_path)}", 
+                label=f"Training Set", 
                 alpha=0.5, color='red')
     
     plt.title("Confidence Distribution Comparison")
@@ -168,9 +168,9 @@ def analyze_models(args):
         class_confidences2.append(confidences2[mask2].mean() if np.any(mask2) else 0)
     
     plt.bar(x - width/2, class_confidences1, width, 
-            label=f"Model 1: {os.path.basename(args.model1)}", alpha=0.7)
+            label=f"Generated Model", alpha=0.7)
     plt.bar(x + width/2, class_confidences2, width, 
-            label=f"Model 2: {os.path.basename(model2_path)}", alpha=0.7)
+            label=f"Training Set", alpha=0.7)
     
     plt.title("Average Confidence by Class")
     plt.xlabel("Class")

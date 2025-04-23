@@ -99,18 +99,18 @@ def compare_models(args):
     model2.eval()
     
     # Create figure
-    fig = plt.figure(figsize=(9, 25))
+    fig = plt.figure(figsize=(7, 10))
     
     # Create a 10x1 grid of subplots with adjusted width ratios
     # Make side columns very narrow and eliminate spacing
-    gs = plt.GridSpec(10, 3, width_ratios=[1, 1, 1])
+    gs = plt.GridSpec(5, 3, width_ratios=[1, 1, 1])
     gs.update(wspace=0.0, hspace=0.5)  # Remove horizontal spacing completely
     
     # Process each image
     with torch.no_grad():
-        for i in range(10):
-            image = images[i]
-            label = i  # Since we sorted by class
+        for i in range(5):
+            image = images[i+2]
+            label = i+2  # Since we sorted by class
             
             # Get predictions
             image_tensor = image.unsqueeze(0).to(device)
@@ -148,9 +148,9 @@ def compare_models(args):
             ax_right.axis('off')
     
     # Add model names as column headers with adjusted positions
-    fig.text(0.40, 0.87, f"Model 1\n{os.path.basename(args.model1)}", 
+    fig.text(0.40, 0.87, "Generated Model", 
              ha='right', va='bottom')
-    fig.text(0.60, 0.87, f"Model 2\n{os.path.basename(model2_path)}", 
+    fig.text(0.60, 0.87, f"Sample from Training Set", 
              ha='left', va='bottom')
     
     # Save the figure
