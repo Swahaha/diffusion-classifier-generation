@@ -64,9 +64,12 @@ python evaluate_generated.py --model_path path/to/generated_model.pth
 
 ## Project Overview
 * Our project aims to use a combination of a VAE model and a Denoising Diffusion Probabilistic Model to generate fully trained neural networks for classifying the CIFAR-10 dataset. Instead of training the NN directly, we are generating the weights using the Diffusion model.
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/103b5e92-79f6-42d9-9802-2fe96eb43563" alt="Screenshot" width="600"/>
+</div>
 
 ## Background
-* Traditionally, Diffusion models are used to generate images. But, diffusion models can be used for wide variety of applications like audio, nlp, or even Neural Networks.
+* Traditionally, Diffusion models are used to generate images. But, diffusion models can be used for wide variety of applications like audio, nlp, or even generating Neural Networks.
 
 ## Methodology
 * Our project is divided into three main components: generating dataset, training model, evaluating results.
